@@ -29,20 +29,28 @@ if (header)
     }
   });
 
-const links = document.querySelectorAll(".policyTab");
-if (links) {
-  const sections = document.querySelectorAll(".anchor");
-  function changeLinkState() {
-    let index = sections.length;
-    while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-    links.forEach((link) => link.classList.remove("active"));
-    links[index]?.classList.add("active");
-  }
-  links.forEach((e) => {
-    onLinkClick(e);
+const policyTab = document.querySelectorAll(".policyTab");
+const sections = document.querySelectorAll(".anchor");
+function changeLinkState() {
+  let index = sections.length;
+  while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+  policyTab.forEach((link) => link.classList.remove("active"));
+  policyTab[index]?.classList.add("active");
+}
+policyTab.forEach((e) => {
+  onLinkClick(e);
+});
+
+function onLinkClick(linkItem) {
+  linkItem.addEventListener("click", function () {
+    menu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    body.classList.remove("active");
   });
 }
-
+window.onscroll = function () {
+  changeLinkState();
+};
 ///
 ///
 /// slick slider
@@ -50,39 +58,39 @@ if (links) {
 ///
 ///
 /// tabEvents
-const toggleBody = (isClosed) => {
-  if (isClosed) {
-    document.body.classList.add("active");
-    if (menu) closeMenu();
-  } else {
-    document.body.classList.remove("active");
-  }
-};
-document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
-  const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
-  if (tab) {
-    eventBtn.onclick = (e) => {
-      e.preventDefault();
-      tab.classList.toggle("active");
-      toggleBody(tab.classList.contains("active"));
-    };
-    tab.onclick = (e) => {
-      if (e.target === e.currentTarget) {
-        tab.classList.toggle("active");
-        toggleBody(tab.classList.contains("active"));
-      }
-    };
-  }
-});
-document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
-  console.log("btn ->");
-  toggleBtn.onclick = () =>
-    toggleBtn.classList.toggle(toggleBtn.getAttribute("data-toggle"));
-});
-///
-///
-///
-///WOW JS
-// new WOW().init({
-//   boxClass: "wow",
+// const toggleBody = (isClosed) => {
+//   if (isClosed) {
+//     document.body.classList.add("active");
+//     if (menu) closeMenu();
+//   } else {
+//     document.body.classList.remove("active");
+//   }
+// };
+// document.querySelectorAll(`[data-event="tabEvent"]`).forEach((eventBtn) => {
+//   const tab = document.querySelector(eventBtn.getAttribute("data-tab"));
+//   if (tab) {
+//     eventBtn.onclick = (e) => {
+//       e.preventDefault();
+//       tab.classList.toggle("active");
+//       toggleBody(tab.classList.contains("active"));
+//     };
+//     tab.onclick = (e) => {
+//       if (e.target === e.currentTarget) {
+//         tab.classList.toggle("active");
+//         toggleBody(tab.classList.contains("active"));
+//       }
+//     };
+//   }
 // });
+// document.querySelectorAll(`[data-toggle]`).forEach((toggleBtn) => {
+//   console.log("btn ->");
+//   toggleBtn.onclick = () =>
+//     toggleBtn.classList.toggle(toggleBtn.getAttribute("data-toggle"));
+// });
+// ///
+// ///
+// ///
+// ///WOW JS
+// // new WOW().init({
+// //   boxClass: "wow",
+// // });

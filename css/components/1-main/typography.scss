@@ -22,7 +22,7 @@ h5 {
 }
 h6 {
   font-size: 18px;
-  &.sm{
+  &.sm {
     font-size: 16px;
   }
 }
@@ -45,5 +45,194 @@ p {
   }
   &.sm {
     font-size: 14px;
+  }
+}
+li {
+  font-size: 18px;
+}
+
+@mixin typography-1160 {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 45px;
+    &.sm {
+      font-size: 36px;
+    }
+  }
+  h3 {
+    font-size: 34px;
+  }
+  h4 {
+    font-size: 22px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+    &.sm {
+      font-size: 14px;
+    }
+  }
+  p {
+    font-size: 15px;
+    &.big {
+      font-size: 17px;
+    }
+    &.sm {
+      font-size: 13px;
+    }
+  }
+  li {
+    font-size: 17px;
+  }
+}
+@mixin typography-1025 {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 42px;
+    &.sm {
+      font-size: 32px;
+    }
+  }
+  h3 {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  h6 {
+    font-size: 15px;
+    &.sm {
+      font-size: 13px;
+    }
+  }
+  p {
+    font-size: 14px;
+    &.big {
+      font-size: 16px;
+    }
+    &.sm {
+      font-size: 12px;
+    }
+  }
+  li {
+    font-size: 16px;
+  }
+}
+@mixin typography-940 {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 40px;
+    &.sm {
+      font-size: 30px;
+    }
+  }
+  h3 {
+    font-size: 27px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 14px;
+    &.sm {
+      font-size: 12px;
+    }
+  }
+  p {
+    font-size: 13px;
+    &.big {
+      font-size: 15px;
+    }
+    &.sm {
+      font-size: 12px;
+    }
+  }
+  li {
+    font-size: 15px;
+  }
+}
+@mixin typography-768 {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 36px;
+    &.sm {
+      font-size: 27px;
+    }
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 12px;
+    &.big {
+      font-size: 14px;
+    }
+  }
+  li {
+    font-size: 14px;
+  }
+}
+@mixin typography-560 {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+    &.sm {
+      font-size: 25px;
+    }
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+@mixin typography-460 {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 27px;
+    &.sm {
+      font-size: 18px;
+    }
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    &.big {
+      font-size: 13px;
+    }
+    &.sm {
+      font-size: 11px;
+    }
+  }
+  li{
+    font-size: 13px;
   }
 }

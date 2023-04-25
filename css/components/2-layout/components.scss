@@ -4,6 +4,10 @@
   overflow: hidden;
   min-height: 100%;
 }
+.anchor {
+  position: relative;
+  top: -60px;
+}
 .autoContainer {
   max-width: 1290px;
   margin: 0 auto;
@@ -181,7 +185,6 @@
     }
   }
 }
-
 
 .button {
   cursor: pointer;
