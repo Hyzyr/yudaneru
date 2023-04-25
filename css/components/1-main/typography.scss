@@ -1,37 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 /* Typography */
 h1 {
-  font-size: 52px;
+  font-size: 56px;
+  font-weight: 700;
 }
 h2 {
   font-size: 48px;
+  &.sm {
+    font-size: 40px;
+  }
 }
 h3 {
-  font-size: 34px;
+  font-size: 36px;
 }
 h4 {
-  font-size: 22px;
+  font-size: 24px;
 }
 h5 {
   font-size: 20px;
 }
 h6 {
   font-size: 18px;
+  &.sm{
+    font-size: 16px;
+  }
 }
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: $font-primary;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2em;
 }
 
 p {
+  font-size: 16px;
   line-height: 1.8em;
+  &.big {
+    font-size: 18px;
+  }
+  &.sm {
+    font-size: 14px;
+  }
 }

@@ -29,6 +29,20 @@ if (header)
     }
   });
 
+const links = document.querySelectorAll(".policyTab");
+if (links) {
+  const sections = document.querySelectorAll(".anchor");
+  function changeLinkState() {
+    let index = sections.length;
+    while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
+    links.forEach((link) => link.classList.remove("active"));
+    links[index]?.classList.add("active");
+  }
+  links.forEach((e) => {
+    onLinkClick(e);
+  });
+}
+
 ///
 ///
 /// slick slider
