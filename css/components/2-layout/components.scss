@@ -530,3 +530,14 @@
 .noBreak {
   white-space: nowrap;
 }
+
+@mixin components-1025 {
+  .button {
+    font-size: 14px;
+  }
+}
+@mixin components-660{
+  .button {
+    font-size: 12px;
+  }
+}
