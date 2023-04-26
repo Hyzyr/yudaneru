@@ -19,6 +19,7 @@
   @include header-1025;
   @include policy-1025;
   @include grid-1025;
+  @include components-1025;
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -42,6 +43,7 @@
 @media (max-width: 660px) {
   @include policy-660;
   @include grid-660;
+  @include components-660;
 }
 @media (max-width: 560px) {
   ._hideMob {

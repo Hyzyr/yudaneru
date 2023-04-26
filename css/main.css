@@ -622,6 +622,8 @@ svg {
 }
 .gridItem .button--icon {
   margin-right: 22px;
+  width: 16px;
+  height: 16px;
 }
 .gridItem .button--icon svg {
   fill: #3d424d;
@@ -720,6 +722,107 @@ svg {
   color: #32327c;
   font-weight: 700;
   margin-bottom: 8px;
+}
+.grid--invest {
+  background: #f7f7fa;
+}
+.grid--invest .grid__inner {
+  padding: 120px 0 85px;
+  max-width: 1096px;
+  margin: 0 auto;
+}
+.grid--invest .gridItem {
+  background: #fff;
+  padding: 32px;
+  -webkit-box-shadow: 0px 2px 8px rgba(16, 24, 40, 0.06);
+          box-shadow: 0px 2px 8px rgba(16, 24, 40, 0.06);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.grid--invest .gridItem h4 {
+  margin-bottom: 16px;
+}
+.grid--invest .gridItem P {
+  margin-bottom: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.65em;
+}
+.grid--invest .gridItem .button {
+  padding: 0.7em 1em;
+}
+.grid--selection {
+  background: #fafafa;
+}
+.grid--selection .grid__inner-row {
+  gap: 30px;
+}
+.grid--selection .grid__inner h3 {
+  color: #32327c;
+  margin-bottom: 52px;
+}
+.grid--selection .gridItem {
+  width: calc(33.3% - 20px);
+  -webkit-box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+          box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+}
+.grid--selection .gridItem__image {
+  margin-bottom: 0;
+}
+.grid--selection .gridItem__info {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: left;
+  padding: 25px;
+}
+.grid--selection .gridItem__info-row {
+  width: 100%;
+  max-width: 290px;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.grid--selection .gridItem__info-row p {
+  max-width: 130px;
+}
+.grid--selection .gridItem__info-row p strong {
+  display: block;
+}
+.grid--selection .gridItem .ratioImage {
+  padding-bottom: 76.5%;
+}
+.grid--selection .gridItem h4 {
+  margin-bottom: 8px;
+}
+.grid--selection .gridItem p strong {
+  color: #171b26;
+  font-weight: 500;
 }
 
 .policy {
@@ -932,6 +1035,21 @@ svg {
   }
   .grid--achievement .gridItem {
     width: calc(25% - 24px);
+  }
+  .grid--invest .grid__inner {
+    padding: 100px 0 80px;
+  }
+  .grid--selection .grid__inner-row {
+    gap: 25px;
+  }
+  .grid--selection .grid__inner h3 {
+    margin-bottom: 45px;
+  }
+  .grid--selection .gridItem {
+    width: calc(33.3% - 18px);
+  }
+  .grid--selection .gridItem__info {
+    padding: 20px;
   }
 }
 @media (max-width: 1025px) {
@@ -1151,6 +1269,34 @@ svg {
   .grid--achievement .gridItem {
     width: calc(25% - 20px);
   }
+  .grid--invest .grid__inner {
+    padding: 90px 0 70px;
+  }
+  .grid--invest .gridItem {
+    padding: 27px;
+  }
+  .grid--selection .grid__inner-row {
+    gap: 25px 15px;
+  }
+  .grid--selection .grid__inner h3 {
+    margin-bottom: 40px;
+  }
+  .grid--selection .gridItem {
+    width: calc(33.3% - 10px);
+  }
+  .grid--selection .gridItem__info {
+    padding: 20px;
+  }
+  .grid--selection .gridItem__info-row {
+    margin-top: 12px;
+  }
+  .grid--selection .gridItem__info h4 {
+    margin-bottom: 5px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -1258,6 +1404,25 @@ svg {
   .grid--achievement .gridItem h3 {
     margin-bottom: 5px;
   }
+  .grid--invest .grid__inner {
+    padding: 70px 0 50px;
+  }
+  .grid--invest .grid__inner-row {
+    gap: 10px;
+  }
+  .grid--invest .gridItem {
+    padding: 25px;
+    width: calc(33.3% - 7px);
+  }
+  .grid--selection .grid__inner-row {
+    gap: 25px 20px;
+  }
+  .grid--selection .grid__inner h3 {
+    margin-bottom: 35px;
+  }
+  .grid--selection .gridItem {
+    width: calc(50% - 15px);
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -1361,6 +1526,27 @@ svg {
   .grid--achievement .gridItem {
     width: calc(50% - 15px);
   }
+  .grid--invest .grid__inner-row {
+    gap: 25px 15px;
+  }
+  .grid--invest .gridItem {
+    width: calc(50% - 15px);
+  }
+  .grid--invest .gridItem h4 {
+    margin-bottom: 12px;
+  }
+  .grid--invest .gridItem p {
+    margin-bottom: 20px;
+  }
+  .grid--selection .grid__inner-row {
+    gap: 25px 15px;
+  }
+  .grid--selection .grid__inner h3 {
+    margin-bottom: 30px;
+  }
+  .grid--selection .gridItem {
+    width: calc(50% - 10px);
+  }
 }
 @media (max-width: 660px) {
   .policy__inner {
@@ -1424,6 +1610,29 @@ svg {
   .grid--achievement .grid__inner {
     padding: 70px 0 50px;
   }
+  .grid--invest .grid__inner {
+    padding: 60px 0 45px;
+  }
+  .grid--invest .grid__inner-row {
+    gap: 20px 10px;
+  }
+  .grid--invest .gridItem {
+    padding: 20px;
+    width: calc(50% - 10px);
+  }
+  .grid--selection .grid__inner-row {
+    gap: 20px 10px;
+  }
+  .grid--selection .gridItem {
+    width: calc(50% - 5px);
+  }
+  .grid--selection .gridItem__info {
+    padding: 15px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
 }
 @media (max-width: 560px) {
   ._hideMob {
@@ -1445,7 +1654,7 @@ svg {
     font-size: 22px;
   }
   .grid__inner-row {
-    gap: 25px 10px;
+    gap: 20px 10px;
   }
   .gridItem {
     width: calc(50% - 7px);
@@ -1477,6 +1686,32 @@ svg {
   }
   .grid--achievement .gridItem {
     width: calc(50% - 10px);
+    padding: 15px;
+  }
+  .grid--invest .grid__inner {
+    padding: 50px 0 40px;
+  }
+  .grid--invest .grid__inner-row {
+    gap: 20px 10px;
+  }
+  .grid--invest .gridItem {
+    padding: 20px;
+    width: 100%;
+  }
+  .grid--selection .grid__inner {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .grid--selection .grid__inner-row {
+    gap: 20px;
+  }
+  .grid--selection .grid__inner h3 {
+    margin-bottom: 25px;
+  }
+  .grid--selection .gridItem {
+    width: 100%;
+  }
+  .grid--selection .gridItem__info {
     padding: 15px;
   }
 }
@@ -1530,7 +1765,7 @@ svg {
     height: 4px;
   }
   .grid__inner-row {
-    gap: 25px;
+    gap: 20px;
   }
   .grid__inner h2 {
     margin-bottom: 30px;
@@ -1560,7 +1795,7 @@ svg {
     margin-bottom: 20px;
   }
   .grid--achievement .grid__inner-row {
-    gap: 10px;
+    gap: 20px;
   }
   .grid--achievement .gridItem {
     width: 100%;
