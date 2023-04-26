@@ -1141,14 +1141,15 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 48px;
+  gap: 48px 30px;
 }
 .grid__inner h2 {
   margin-bottom: 60px;
   text-align: center;
 }
 .gridItem {
-  width: calc(33.3% - 32px);
+  width: calc(33.3% - 20px);
+  max-width: 358px;
 }
 .gridItem__image {
   width: 100%;
@@ -1266,7 +1267,7 @@ svg {
   text-align: center;
 }
 .grid--achievement .grid__inner-row {
-  gap: 40px;
+  gap: 20px;
 }
 .grid--achievement .grid__inner p {
   color: #3d424d;
@@ -1275,8 +1276,9 @@ svg {
   margin-bottom: 16px;
 }
 .grid--achievement .gridItem {
-  width: calc(25% - 30px);
+  width: calc(25% - 15px);
   padding: 23px 30px;
+  max-width: 262px;
   background: #fff;
   text-align: center;
   -webkit-box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.04);
@@ -1344,6 +1346,10 @@ svg {
   overflow: hidden;
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
 }
 .grid--selection .gridItem__image {
   margin-bottom: 0;
@@ -1388,6 +1394,10 @@ svg {
 .grid--selection .gridItem p strong {
   color: #171b26;
   font-weight: 500;
+}
+.grid--selection .gridItem:hover {
+  -webkit-box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
+          box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
 }
 
 @media (max-width: 1160px) {
@@ -1451,13 +1461,13 @@ svg {
   }
 
   .grid__inner-row {
-    gap: 40px;
+    gap: 40px 30px;
   }
   .grid__inner h2 {
     margin-bottom: 50px;
   }
   .gridItem {
-    width: calc(33.3% - 27px);
+    width: calc(33.3% - 20px);
   }
   .grid--service {
     padding: 100px 0;
@@ -1480,10 +1490,10 @@ svg {
     padding: 140px 0 80px;
   }
   .grid--achievement .grid__inner-row {
-    gap: 30px;
+    gap: 30px 20px;
   }
   .grid--achievement .gridItem {
-    width: calc(25% - 24px);
+    width: calc(25% - 15px);
   }
   .grid--invest .grid__inner {
     padding: 100px 0 80px;
@@ -1691,13 +1701,13 @@ svg {
   }
 
   .grid__inner-row {
-    gap: 35px 27px;
+    gap: 35px 25px;
   }
   .grid__inner h2 {
     margin-bottom: 45px;
   }
   .gridItem {
-    width: calc(33.3% - 20px);
+    width: calc(33.3% - 18px);
   }
   .grid--service {
     padding: 80px 0;
@@ -1723,13 +1733,13 @@ svg {
     margin-bottom: 50px;
   }
   .grid--achievement .grid__inner-row {
-    gap: 25px;
+    gap: 30px 20px;
   }
   .grid--achievement .grid__inner h2 {
     margin-bottom: 12px;
   }
   .grid--achievement .gridItem {
-    width: calc(25% - 20px);
+    width: calc(25% - 15px);
   }
   .grid--invest .grid__inner {
     padding: 90px 0 70px;
@@ -1830,13 +1840,13 @@ svg {
   }
 
   .grid__inner-row {
-    gap: 30px 20px;
+    gap: 25px 15px;
   }
   .grid__inner h2 {
     margin-bottom: 35px;
   }
   .gridItem {
-    width: calc(33.3% - 14px);
+    width: calc(33.3% - 10px);
   }
   .gridItem .button--icon {
     margin-right: 15px;
@@ -1867,10 +1877,10 @@ svg {
     max-width: 530px;
   }
   .grid--achievement .grid__inner-row {
-    gap: 15px;
+    gap: 20px;
   }
   .grid--achievement .gridItem {
-    width: calc(25% - 14px);
+    width: calc(25% - 15px);
     padding: 20px;
   }
   .grid--achievement .gridItem h3 {
@@ -1894,6 +1904,7 @@ svg {
   }
   .grid--selection .gridItem {
     width: calc(50% - 15px);
+    max-width: unset;
   }
 }
 @media (max-width: 768px) {
@@ -1973,10 +1984,10 @@ svg {
   }
 
   .grid__inner-row {
-    gap: 30px;
+    gap: 20px;
   }
   .gridItem {
-    width: calc(50% - 20px);
+    width: calc(50% - 15px);
   }
   .gridItem__image {
     margin-bottom: 20px;
@@ -2008,6 +2019,7 @@ svg {
   }
   .grid--achievement .gridItem {
     width: calc(50% - 15px);
+    max-width: unset;
   }
   .grid--invest .grid__inner-row {
     gap: 25px 15px;
@@ -2068,10 +2080,11 @@ svg {
   }
 
   .grid__inner-row {
-    gap: 25px 20px;
+    gap: 20px 15px;
   }
   .gridItem {
-    width: calc(50% - 15px);
+    width: calc(50% - 10px);
+    max-width: unset;
   }
   .grid--service {
     padding: 50px 0;

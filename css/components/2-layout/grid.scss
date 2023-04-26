@@ -5,7 +5,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 48px;
+      gap: 48px 30px;
     }
     h2 {
       margin-bottom: 60px;
@@ -13,7 +13,8 @@
     }
   }
   &Item {
-    width: calc(33.3% - 32px);
+    width: calc(33.3% - 20px);
+    max-width: 358px;
     &__image {
       width: 100%;
       margin-bottom: 24px;
@@ -108,7 +109,7 @@
           text-align: center;
         }
         &-row {
-          gap: 40px;
+          gap: 20px;
         }
         p {
           color: $black-2;
@@ -118,8 +119,9 @@
         }
       }
       &Item {
-        width: calc(25% - 30px);
+        width: calc(25% - 15px);
         padding: 23px 30px;
+        max-width: 262px;
         background: $white;
         text-align: center;
         box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.04);
@@ -181,6 +183,8 @@
         overflow: hidden;
         background: #ffffff;
         box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+        @include transition;
+        cursor: pointer;
         &__image {
           margin-bottom: 0;
         }
@@ -216,6 +220,9 @@
             font-weight: 500;
           }
         }
+        &:hover {
+          box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
+        }
       }
     }
   }
@@ -224,14 +231,14 @@
   .grid {
     &__inner {
       &-row {
-        gap: 40px;
+        gap: 40px 30px;
       }
       h2 {
         margin-bottom: 50px;
       }
     }
     &Item {
-      width: calc(33.3% - 27px);
+      width: calc(33.3% - 20px);
     }
     &--service {
       padding: 100px 0;
@@ -259,11 +266,11 @@
         &__inner {
           padding: 140px 0 80px;
           &-row {
-            gap: 30px;
+            gap: 30px 20px;
           }
         }
         &Item {
-          width: calc(25% - 24px);
+          width: calc(25% - 15px);
         }
       }
     }
@@ -298,14 +305,14 @@
   .grid {
     &__inner {
       &-row {
-        gap: 35px 27px;
+        gap: 35px 25px;
       }
       h2 {
         margin-bottom: 45px;
       }
     }
     &Item {
-      width: calc(33.3% - 20px);
+      width: calc(33.3% - 18px);
     }
     &--service {
       padding: 80px 0;
@@ -336,14 +343,14 @@
             margin-bottom: 50px;
           }
           &-row {
-            gap: 25px;
+            gap: 30px 20px;
           }
           h2 {
             margin-bottom: 12px;
           }
         }
         &Item {
-          width: calc(25% - 20px);
+          width: calc(25% - 15px);
         }
       }
     }
@@ -387,14 +394,14 @@
   .grid {
     &__inner {
       &-row {
-        gap: 30px 20px;
+        gap: 25px 15px;
       }
       h2 {
         margin-bottom: 35px;
       }
     }
     &Item {
-      width: calc(33.3% - 14px);
+      width: calc(33.3% - 10px);
       .button {
         &--icon {
           margin-right: 15px;
@@ -432,11 +439,11 @@
             max-width: 530px;
           }
           &-row {
-            gap: 15px;
+            gap: 20px;
           }
         }
         &Item {
-          width: calc(25% - 14px);
+          width: calc(25% - 15px);
           padding: 20px;
           h3 {
             margin-bottom: 5px;
@@ -470,6 +477,7 @@
         }
         &Item {
           width: calc(50% - 15px);
+          max-width: unset;
         }
       }
     }
@@ -479,11 +487,11 @@
   .grid {
     &__inner {
       &-row {
-        gap: 30px;
+        gap: 20px;
       }
     }
     &Item {
-      width: calc(50% - 20px);
+      width: calc(50% - 15px);
       &__image {
         margin-bottom: 20px;
       }
@@ -521,6 +529,7 @@
         }
         &Item {
           width: calc(50% - 15px);
+          max-width: unset;
         }
       }
     }
@@ -563,11 +572,12 @@
   .grid {
     &__inner {
       &-row {
-        gap: 25px 20px;
+        gap: 20px 15px;
       }
     }
     &Item {
-      width: calc(50% - 15px);
+      width: calc(50% - 10px);
+      max-width: unset;
     }
     &--service {
       padding: 50px 0;
