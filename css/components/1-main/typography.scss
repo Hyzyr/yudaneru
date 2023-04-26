@@ -16,6 +16,9 @@ h3 {
 }
 h4 {
   font-size: 24px;
+  &.sm {
+    font-size: 22px;
+  }
 }
 h5 {
   font-size: 20px;
@@ -66,6 +69,9 @@ li {
   }
   h4 {
     font-size: 22px;
+    &.sm {
+      font-size: 20px;
+    }
   }
   h5 {
     font-size: 18px;
@@ -104,6 +110,9 @@ li {
   }
   h4 {
     font-size: 20px;
+    &.sm {
+      font-size: 18px;
+    }
   }
   h5 {
     font-size: 17px;
@@ -142,6 +151,9 @@ li {
   }
   h4 {
     font-size: 18px;
+    &.sm {
+      font-size: 16px;
+    }
   }
   h5 {
     font-size: 16px;
@@ -180,6 +192,9 @@ li {
   }
   h4 {
     font-size: 16px;
+    &.sm {
+      font-size: 14px;
+    }
   }
   h5 {
     font-size: 14px;
@@ -202,10 +217,13 @@ li {
     font-size: 36px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 30px;
     &.sm {
       font-size: 25px;
     }
+  }
+  h4 {
+    font-size: 15px;
   }
   h3 {
     font-size: 22px;
@@ -216,7 +234,7 @@ li {
     font-size: 34px;
   }
   h2 {
-    font-size: 27px;
+    font-size: 25px;
     &.sm {
       font-size: 18px;
     }
@@ -232,7 +250,7 @@ li {
       font-size: 11px;
     }
   }
-  li{
+  li {
     font-size: 13px;
   }
 }

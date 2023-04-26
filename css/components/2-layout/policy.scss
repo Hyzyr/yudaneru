@@ -17,6 +17,9 @@
         border-radius: 8px;
         color: $black-2;
         line-height: 1.45em;
+        &:hover {
+          color: $primary;
+        }
         &.active {
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.04);
           background: $white;
@@ -226,7 +229,7 @@
     }
   }
 }
-@mixin policy-460{
+@mixin policy-460 {
   .policy {
     &__inner {
       gap: 20px;
@@ -245,10 +248,10 @@
           margin-bottom: 18px;
         }
       }
-      &__body{
-        li{
+      &__body {
+        li {
           padding-left: 20px;
-          &::before{
+          &::before {
             top: 8px;
             left: 8px;
             width: 4px;
@@ -258,6 +261,4 @@
       }
     }
   }
-
 }
-

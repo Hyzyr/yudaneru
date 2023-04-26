@@ -6,7 +6,6 @@
   z-index: 1;
   transition: 0.2s ease-out;
   transition-property: opacity, transform, padding;
-
   &__inner {
     position: relative;
     display: flex;
@@ -21,13 +20,14 @@
       display: none;
     }
   }
-
   &.sticky {
     position: fixed;
-    padding: 20px 0;
-    border-bottom: 1px solid rgba($secondary, 0.4);
+    top: 0;
     animation: 0.3s sticky ease-in;
     transition-duration: 0.5s;
+  }
+  .autoContainer {
+    max-width: 1360px;
   }
 }
 .nav {

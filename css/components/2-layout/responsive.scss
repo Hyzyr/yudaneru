@@ -6,6 +6,7 @@
   }
   @include typography-1160;
   @include policy-1160;
+  @include grid-1160;
 }
 @media (max-width: 1025px) {
   body {
@@ -17,14 +18,15 @@
   @include typography-1025;
   @include header-1025;
   @include policy-1025;
+  @include grid-1025;
 }
-
 @media (max-width: 940px) {
   .autoContainer {
     padding: 0 25px;
   }
   @include typography-940;
   @include policy-940;
+  @include grid-940;
 }
 @media (max-width: 768px) {
   body {
@@ -35,19 +37,25 @@
   }
   @include typography-768;
   @include policy-768;
+  @include grid-768;
 }
 @media (max-width: 660px) {
   @include policy-660;
+  @include grid-660;
 }
 @media (max-width: 560px) {
   ._hideMob {
     display: none;
   }
   @include typography-560;
-
+  @include grid-560;
 }
 @media (max-width: 460px) {
   @include typography-460;
   @include policy-460;
+  @include grid-460;
+}
+@media (max-width: 370px) {
+  @include grid-370;
 }
 
