@@ -5,8 +5,7 @@
     padding: 0 40px;
   }
   @include typography-1160;
-  @include policy-1160;
-  @include grid-1160;
+  @include layouts-1160;
 }
 @media (max-width: 1025px) {
   body {
@@ -17,8 +16,7 @@
   }
   @include typography-1025;
   @include header-1025;
-  @include policy-1025;
-  @include grid-1025;
+  @include layouts-1025;
   @include components-1025;
 }
 @media (max-width: 940px) {
@@ -26,8 +24,7 @@
     padding: 0 25px;
   }
   @include typography-940;
-  @include policy-940;
-  @include grid-940;
+  @include layouts-940;
 }
 @media (max-width: 768px) {
   body {
@@ -37,12 +34,10 @@
     padding: 0 15px;
   }
   @include typography-768;
-  @include policy-768;
-  @include grid-768;
+  @include layouts-768;
 }
 @media (max-width: 660px) {
-  @include policy-660;
-  @include grid-660;
+  @include layouts-660;
   @include components-660;
 }
 @media (max-width: 560px) {
@@ -50,14 +45,12 @@
     display: none;
   }
   @include typography-560;
-  @include grid-560;
+  @include layouts-560;
 }
 @media (max-width: 460px) {
   @include typography-460;
-  @include policy-460;
-  @include grid-460;
+  @include layouts-460;
 }
 @media (max-width: 370px) {
-  @include grid-370;
+  @include layouts-370;
 }
-

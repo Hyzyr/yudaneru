@@ -29,17 +29,21 @@ if (header)
     }
   });
 
-const policyTab = document.querySelectorAll(".policyTab");
+const scrollTab = document.querySelectorAll(".scrollTab");
 const sections = document.querySelectorAll(".anchor");
+const scroll__inner = document.querySelector(".scroll__inner");
+
 function changeLinkState() {
   let index = sections.length;
-  while (--index && window.scrollY + 100 < sections[index].offsetTop) {}
-  policyTab.forEach((link) => link.classList.remove("active"));
-  policyTab[index]?.classList.add("active");
+  while (--index && scroll__inner.scrollY + 1 < sections[index].offsetTop) {}
+  scrollTab.forEach((link) => link.classList.remove("active"));
+  scrollTab[index]?.classList.add("active");
+  console.log(scroll__inner.scrollY);
 }
-policyTab.forEach((e) => {
+scrollTab.forEach((e) => {
   onLinkClick(e);
 });
+
 
 function onLinkClick(linkItem) {
   linkItem.addEventListener("click", function () {
@@ -48,7 +52,7 @@ function onLinkClick(linkItem) {
     body.classList.remove("active");
   });
 }
-window.onscroll = function () {
+scroll__inner.onscroll = function () {
   changeLinkState();
 };
 ///

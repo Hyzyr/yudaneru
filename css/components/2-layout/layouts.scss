@@ -5,7 +5,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 48px;
+      gap: 48px 30px;
     }
     h2 {
       margin-bottom: 60px;
@@ -13,7 +13,8 @@
     }
   }
   &Item {
-    width: calc(33.3% - 32px);
+    width: calc(33.3% - 20px);
+    max-width: 358px;
     &__image {
       width: 100%;
       margin-bottom: 24px;
@@ -40,6 +41,8 @@
     .button {
       &--icon {
         margin-right: 22px;
+        width: 16px;
+        height: 16px;
         svg {
           fill: $black-2;
         }
@@ -106,7 +109,7 @@
           text-align: center;
         }
         &-row {
-          gap: 40px;
+          gap: 20px;
         }
         p {
           color: $black-2;
@@ -116,8 +119,9 @@
         }
       }
       &Item {
-        width: calc(25% - 30px);
+        width: calc(25% - 15px);
         padding: 23px 30px;
+        max-width: 262px;
         background: $white;
         text-align: center;
         box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.04);
@@ -130,22 +134,114 @@
       }
     }
   }
+  &--invest {
+    background: $gray-2;
+    .grid {
+      &__inner {
+        padding: 120px 0 85px;
+        max-width: 1096px;
+        margin: 0 auto;
+      }
+      &Item {
+        background: $white;
+        padding: 32px;
+        box-shadow: 0px 2px 8px rgba(16, 24, 40, 0.06);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h4 {
+          margin-bottom: 16px;
+        }
+        P {
+          margin-bottom: 24px;
+          flex: 1;
+          line-height: 1.65em;
+        }
+        .button {
+          padding: 0.7em 1em;
+        }
+      }
+    }
+  }
+  &--selection {
+    background: $gray;
+    .grid {
+      &__inner {
+        &-row {
+          gap: 30px;
+        }
+        h3 {
+          color: $primary;
+          margin-bottom: 52px;
+        }
+      }
+      &Item {
+        width: calc(33.3% - 20px);
+        box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+        border-radius: 8px;
+        overflow: hidden;
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgba(16, 24, 40, 0.04);
+        @include transition;
+        cursor: pointer;
+        &__image {
+          margin-bottom: 0;
+        }
+        &__info {
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+          padding: 25px;
+          &-row {
+            width: 100%;
+            max-width: 290px;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              max-width: 130px;
+              strong {
+                display: block;
+              }
+            }
+          }
+        }
+        .ratioImage {
+          padding-bottom: 76.5%;
+        }
+        h4 {
+          margin-bottom: 8px;
+        }
+        p {
+          strong {
+            color: $black;
+            font-weight: 500;
+          }
+        }
+        &:hover {
+          box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
+        }
+      }
+    }
+  }
 }
-.policy {
+.scroll {
   margin: 190px 0 120px;
   &__inner {
     display: flex;
     justify-content: space-between;
-
+    height: 80vh;
+    overflow-y: auto;
     &-tabs {
       position: sticky;
-      top: 100px;
+      top: 0;
       width: 270px;
       padding: 16px;
       background: $gray;
       border-radius: 8px;
       align-self: flex-start;
-
       h6 {
         font-weight: 500;
         margin-bottom: 10px;
@@ -176,7 +272,6 @@
     }
   }
   &Content {
-    display: flex;
     &__header {
       display: flex;
       flex-direction: column;
@@ -234,11 +329,10 @@
   }
 }
 
-@mixin policy-1160 {
-  .policy {
+@mixin layouts-1160 {
+  .scroll {
     &__inner {
       &-content {
-        padding-left: 350px;
         gap: 25px;
       }
     }
@@ -250,171 +344,17 @@
       }
     }
   }
-}
-@mixin policy-1025 {
-  .policy {
-    &__inner {
-      &-tabs {
-        width: 260px;
-      }
-      &-content {
-        padding-left: 300px;
-        gap: 20px;
-      }
-    }
-    &Content {
-      &__header {
-        margin-bottom: 20px;
-        gap: 12px;
-        &.caption {
-          margin-bottom: 40px;
-        }
-      }
-      &__body {
-        ul {
-          gap: 20px;
-        }
-      }
-    }
-  }
-}
-@mixin policy-940 {
-  .policy {
-    &__inner {
-      &-tabs {
-        width: 245px;
-      }
-      &-content {
-        padding-left: 270px;
-      }
-    }
-    &Content {
-      &__header {
-        margin-bottom: 18px;
-        gap: 10px;
-        &.caption {
-          margin-bottom: 35px;
-        }
-      }
-      &__body {
-        ul {
-          gap: 15px;
-        }
-      }
-    }
-  }
-}
-@mixin policy-768 {
-  .policy {
-    &__inner {
-      &-tabs {
-        width: 230px;
-        padding: 12px;
-        border-radius: 6px;
-        a {
-          padding: 9px 11px;
-        }
-      }
-      &-content {
-        padding-left: 250px;
-        gap: 15px;
-      }
-    }
-    &Content {
-      gap: 30px;
-      &__header {
-        margin-bottom: 15px;
-        gap: 6px;
-        &.caption {
-          margin-bottom: 25px;
-        }
-      }
-      &__body {
-        ul {
-          gap: 10px;
-        }
-      }
-    }
-  }
-}
-@mixin policy-660 {
-  .policy {
-    &__inner {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      &-tabs {
-        width: 100%;
-        padding: 12px;
-        border-radius: 6px;
-        position: static;
-        a {
-          padding: 9px 11px;
-        }
-      }
-      &-content {
-        width: 100%;
-        padding-left: 0;
-        gap: 20px;
-      }
-    }
-    &Content {
-      gap: 30px;
-      &__header {
-        margin-bottom: 15px;
-        gap: 6px;
-        &.caption {
-          margin-bottom: 25px;
-        }
-      }
-    }
-  }
-}
-@mixin policy-460 {
-  .policy {
-    &__inner {
-      gap: 20px;
-      &-content {
-        width: 100%;
-        padding-left: 0;
-        gap: 15px;
-      }
-    }
-    &Content {
-      gap: 30px;
-      &__header {
-        margin-bottom: 10px;
-        gap: 6px;
-        &.caption {
-          margin-bottom: 18px;
-        }
-      }
-      &__body {
-        li {
-          padding-left: 20px;
-          &::before {
-            top: 8px;
-            left: 8px;
-            width: 4px;
-            height: 4px;
-          }
-        }
-      }
-    }
-  }
-}
-@mixin grid-1160 {
   .grid {
     &__inner {
       &-row {
-        gap: 40px;
+        gap: 40px 30px;
       }
       h2 {
         margin-bottom: 50px;
       }
     }
     &Item {
-      width: calc(33.3% - 27px);
+      width: calc(33.3% - 20px);
     }
     &--service {
       padding: 100px 0;
@@ -442,28 +382,78 @@
         &__inner {
           padding: 140px 0 80px;
           &-row {
-            gap: 30px;
+            gap: 30px 20px;
           }
         }
         &Item {
-          width: calc(25% - 24px);
+          width: calc(25% - 15px);
+        }
+      }
+    }
+    &--invest {
+      .grid {
+        &__inner {
+          padding: 100px 0 80px;
+        }
+      }
+    }
+    &--selection {
+      .grid {
+        &__inner {
+          &-row {
+            gap: 25px;
+          }
+          h3 {
+            margin-bottom: 45px;
+          }
+        }
+        &Item {
+          width: calc(33.3% - 18px);
+          &__info {
+            padding: 20px;
+          }
         }
       }
     }
   }
 }
-@mixin grid-1025 {
+@mixin layouts-1025 {
+  .scroll {
+    &__inner {
+      &-tabs {
+        width: 260px;
+      }
+      &-content {
+        gap: 20px;
+        width: calc(100% - 300px);
+      }
+    }
+    &Content {
+      &__header {
+        margin-bottom: 20px;
+        gap: 12px;
+        &.caption {
+          margin-bottom: 40px;
+        }
+      }
+      &__body {
+        ul {
+          gap: 20px;
+        }
+      }
+    }
+  }
   .grid {
     &__inner {
       &-row {
-        gap: 35px 27px;
+        gap: 35px 25px;
       }
       h2 {
         margin-bottom: 45px;
       }
     }
     &Item {
-      width: calc(33.3% - 20px);
+      width: calc(33.3% - 18px);
     }
     &--service {
       padding: 80px 0;
@@ -494,31 +484,89 @@
             margin-bottom: 50px;
           }
           &-row {
-            gap: 25px;
+            gap: 30px 20px;
           }
           h2 {
             margin-bottom: 12px;
           }
         }
         &Item {
-          width: calc(25% - 20px);
+          width: calc(25% - 15px);
+        }
+      }
+    }
+    &--invest {
+      .grid {
+        &__inner {
+          padding: 90px 0 70px;
+        }
+        &Item {
+          padding: 27px;
+        }
+      }
+    }
+    &--selection {
+      .grid {
+        &__inner {
+          &-row {
+            gap: 25px 15px;
+          }
+          h3 {
+            margin-bottom: 40px;
+          }
+        }
+        &Item {
+          width: calc(33.3% - 10px);
+          &__info {
+            padding: 20px;
+            &-row {
+              margin-top: 12px;
+            }
+            h4 {
+              margin-bottom: 5px;
+            }
+          }
         }
       }
     }
   }
 }
-@mixin grid-940 {
+@mixin layouts-940 {
+  .scroll {
+    &__inner {
+      &-tabs {
+        width: 245px;
+      }
+      &-content {
+        width: calc(100% - 280px);
+      }
+    }
+    &Content {
+      &__header {
+        margin-bottom: 18px;
+        gap: 10px;
+        &.caption {
+          margin-bottom: 35px;
+        }
+      }
+      &__body {
+        ul {
+          gap: 15px;
+        }
+      }
+    }
+  }
   .grid {
     &__inner {
       &-row {
-        gap: 30px 20px;
+        gap: 25px 15px;
       }
       h2 {
         margin-bottom: 35px;
       }
     }
     &Item {
-      width: calc(33.3% - 14px);
+      width: calc(33.3% - 10px);
       .button {
         &--icon {
           margin-right: 15px;
@@ -556,11 +604,11 @@
             max-width: 530px;
           }
           &-row {
-            gap: 15px;
+            gap: 20px;
           }
         }
         &Item {
-          width: calc(25% - 14px);
+          width: calc(25% - 15px);
           padding: 20px;
           h3 {
             margin-bottom: 5px;
@@ -568,17 +616,78 @@
         }
       }
     }
+    &--invest {
+      .grid {
+        &__inner {
+          padding: 70px 0 50px;
+          &-row {
+            gap: 10px;
+          }
+        }
+        &Item {
+          padding: 25px;
+          width: calc(33.3% - 7px);
+        }
+      }
+    }
+    &--selection {
+      .grid {
+        &__inner {
+          &-row {
+            gap: 25px 20px;
+          }
+          h3 {
+            margin-bottom: 35px;
+          }
+        }
+        &Item {
+          width: calc(50% - 15px);
+          max-width: unset;
+        }
+      }
+    }
   }
 }
-@mixin grid-768 {
+@mixin layouts-768 {
+  .scroll {
+    &__inner {
+      &-tabs {
+        width: 230px;
+        padding: 12px;
+        border-radius: 6px;
+        a {
+          padding: 9px 11px;
+        }
+      }
+      &-content {
+        width: calc(100% - 260px);
+        gap: 15px;
+      }
+    }
+    &Content {
+      gap: 30px;
+      &__header {
+        margin-bottom: 15px;
+        gap: 6px;
+        &.caption {
+          margin-bottom: 25px;
+        }
+      }
+      &__body {
+        ul {
+          gap: 10px;
+        }
+      }
+    }
+  }
   .grid {
     &__inner {
       &-row {
-        gap: 30px;
+        gap: 20px;
       }
     }
     &Item {
-      width: calc(50% - 20px);
+      width: calc(50% - 15px);
       &__image {
         margin-bottom: 20px;
       }
@@ -616,20 +725,86 @@
         }
         &Item {
           width: calc(50% - 15px);
+          max-width: unset;
+        }
+      }
+    }
+    &--invest {
+      .grid {
+        &__inner {
+          &-row {
+            gap: 25px 15px;
+          }
+        }
+        &Item {
+          width: calc(50% - 15px);
+          h4 {
+            margin-bottom: 12px;
+          }
+          p {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    &--selection {
+      .grid {
+        &__inner {
+          &-row {
+            gap: 25px 15px;
+          }
+          h3 {
+            margin-bottom: 30px;
+          }
+        }
+        &Item {
+          width: calc(50% - 10px);
         }
       }
     }
   }
 }
-@mixin grid-660 {
+@mixin layouts-660 {
+  .scroll {
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &-tabs {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+        position: static;
+        a {
+          padding: 9px 11px;
+        }
+      }
+      &-content {
+        width: 100%;
+        padding-left: 0;
+        gap: 20px;
+      }
+    }
+    &Content {
+      gap: 30px;
+      &__header {
+        margin-bottom: 15px;
+        gap: 6px;
+        &.caption {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
   .grid {
     &__inner {
       &-row {
-        gap: 25px 20px;
+        gap: 20px 15px;
       }
     }
     &Item {
-      width: calc(50% - 15px);
+      width: calc(50% - 10px);
+      max-width: unset;
     }
     &--service {
       padding: 50px 0;
@@ -660,13 +835,42 @@
         }
       }
     }
+    &--invest {
+      .grid {
+        &__inner {
+          padding: 60px 0 45px;
+          &-row {
+            gap: 20px 10px;
+          }
+        }
+        &Item {
+          padding: 20px;
+          width: calc(50% - 10px);
+        }
+      }
+    }
+    &--selection {
+      .grid {
+        &__inner {
+          &-row {
+            gap: 20px 10px;
+          }
+        }
+        &Item {
+          width: calc(50% - 5px);
+          &__info {
+            padding: 15px;
+          }
+        }
+      }
+    }
   }
 }
-@mixin grid-560 {
+@mixin layouts-560 {
   .grid {
     &__inner {
       &-row {
-        gap: 25px 10px;
+        gap: 20px 10px;
       }
     }
     &Item {
@@ -711,13 +915,77 @@
         }
       }
     }
+    &--invest {
+      .grid {
+        &__inner {
+          padding: 50px 0 40px;
+          &-row {
+            gap: 20px 10px;
+          }
+        }
+        &Item {
+          padding: 20px;
+          width: 100%;
+        }
+      }
+    }
+    &--selection {
+      .grid {
+        &__inner {
+          max-width: 450px;
+          margin: 0 auto;
+          &-row {
+            gap: 20px;
+          }
+          h3 {
+            margin-bottom: 25px;
+          }
+        }
+        &Item {
+          width: 100%;
+          &__info {
+            padding: 15px;
+          }
+        }
+      }
+    }
   }
 }
-@mixin grid-460 {
+@mixin layouts-460 {
+  .scroll {
+    &__inner {
+      gap: 20px;
+      &-content {
+        width: 100%;
+        gap: 15px;
+      }
+    }
+    &Content {
+      gap: 30px;
+      &__header {
+        margin-bottom: 10px;
+        gap: 6px;
+        &.caption {
+          margin-bottom: 18px;
+        }
+      }
+      &__body {
+        li {
+          padding-left: 20px;
+          &::before {
+            top: 8px;
+            left: 8px;
+            width: 4px;
+            height: 4px;
+          }
+        }
+      }
+    }
+  }
   .grid {
     &__inner {
       &-row {
-        gap: 25px;
+        gap: 20px;
       }
       h2 {
         margin-bottom: 30px;
@@ -750,7 +1018,7 @@
     }
   }
 }
-@mixin grid-370 {
+@mixin layouts-370 {
   .grid {
     &--achievement {
       .grid {
@@ -759,7 +1027,7 @@
             margin-bottom: 20px;
           }
           &-row {
-            gap: 10px;
+            gap: 20px;
           }
         }
         &Item {
