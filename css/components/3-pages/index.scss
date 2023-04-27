@@ -13,6 +13,9 @@
       width: 500px;
 
       strong {
+        display: block;
+        margin-bottom: 1em;
+
         color: $primary;
         font-style: normal;
         font-weight: 600;
@@ -20,7 +23,6 @@
         line-height: 1.2;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin-bottom: 1em;
       }
       h1 {
         font-weight: 700;
@@ -56,7 +58,6 @@
     }
   }
 }
-
 .whyUs {
   background: $white-2;
   padding: 120px 0;
@@ -116,10 +117,17 @@
     padding-bottom: 105%;
     z-index: 0;
 
-    img {
+    &-image {
+      display: flex;
       position: absolute;
-      object-fit: cover;
       border-radius: 8px;
+
+      img {
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
       &:nth-child(1) {
         bottom: 0;
@@ -145,6 +153,336 @@
         width: 19%;
         height: 40%;
         z-index: -1;
+      }
+    }
+  }
+}
+.feedbacks {
+  padding: 120px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      width: 370px;
+      margin: 0 auto;
+
+      strong {
+        color: $primary;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.2;
+        color: $black;
+      }
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.25;
+        color: $black-2;
+      }
+    }
+  }
+  &__slider {
+    position: relative;
+    width: calc(100% - 400px);
+    max-width: 670px;
+    margin: 0 !important;
+    z-index: 0;
+
+    &-item {
+      font-size: 30px;
+
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100%;
+      gap: 1em;
+
+      border-radius: 8px;
+      border: 1px dashed rgba($primary, 0.5);
+      padding: 1em 3.4em 1em 3.4em;
+      background: $white-secondary;
+
+      p {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: $black;
+      }
+      &-ico {
+        display: flex;
+        height: 16px;
+
+        svg {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+    .swiper {
+      &-slide {
+        padding: 5px;
+        height: unset !important;
+      }
+      &-arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+        font-size: 30px;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        background: $white;
+        border: 1px solid $blueLight;
+        transition: 0.2s ease-in;
+        //display
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-prev {
+          left: 1em;
+        }
+        &-next {
+          right: 1em;
+        }
+
+        &:hover {
+          background: rgba($blueLight, 0.6);
+        }
+
+        &.swiper-button-disabled {
+          cursor: default;
+          opacity: 0.4;
+          background: $white;
+        }
+      }
+    }
+  }
+}
+
+@mixin index-1160 {
+  .hero {
+    padding: 80px 0 100px 0;
+    &__inner {
+      height: unset;
+      min-height: 60vh;
+
+      &-content {
+        width: 430px;
+      }
+      &-banner {
+        width: calc(100% - 450px);
+        max-width: 430px;
+      }
+    }
+  }
+  .whyUs {
+    padding: 100px 0;
+    &__inner {
+      &-content {
+        margin: 0;
+      }
+    }
+    &__list {
+      gap: 20px;
+      &-item {
+        font-size: 20px;
+      }
+    }
+  }
+  .feedbacks {
+    padding: 100px 0;
+    &__slider {
+      &-item {
+        padding: 25px 80px;
+        p {
+          font-size: 18px;
+        }
+      }
+      .swiper {
+        &-arrow {
+          font-size: 27px;
+
+          .custIcon {
+            font-size: 0.6em;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin index-1025 {
+  .hero {
+    padding: 60px 0 80px 0;
+    &__inner {
+    }
+  }
+  .whyUs {
+    padding: 80px 0;
+  }
+  .feedbacks {
+    padding: 80px 0;
+    &__slider {
+      &-item {
+        padding: 25px 60px;
+        p {
+          font-size: 16px;
+        }
+      }
+      .swiper {
+        &-arrow {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+@mixin index-940 {
+  .hero {
+    padding: 60px 0;
+    &__inner {
+      gap: 20p;
+      min-height: 55vh;
+
+      &-content {
+        width: 350px;
+      }
+      &-banner {
+        width: calc(100% - 370px);
+        max-width: 350px;
+      }
+    }
+  }
+  .whyUs {
+    padding: 60px 0;
+    &__inner {
+      flex-direction: column-reverse;
+
+      &-content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      &-banner {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+    &__banner {
+      display: flex;
+      gap: 20px;
+      padding-bottom: unset;
+
+      &-image {
+        position: relative;
+        flex: 1 0 0;
+
+        &:nth-child(n) {
+          top: unset;
+          left: unset;
+          right: unset;
+          bottom: unset;
+          width: unset;
+          height: unset;
+        }
+
+        &._shape {
+          display: none;
+        }
+      }
+    }
+  }
+  .feedbacks {
+    padding: 60px 0;
+    &__inner {
+      flex-direction: column;
+      gap: 30px;
+      &-info {
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+    &__slider {
+      width: 100%;
+    }
+  }
+}
+
+@mixin index-768 {
+  .hero {
+    padding: 40px 0;
+
+    &__inner {
+      flex-direction: column-reverse;
+      &-content {
+        width: 100%;
+        max-width: 450px;
+
+        strong {
+          font-size: 14px;
+        }
+      }
+      &-banner {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .whyUs {
+    &__banner {
+      gap: 15px;
+    }
+  }
+  .feedbacks {
+    &__inner {
+      &-info {
+        gap: 10px;
+
+        strong {
+          font-size: 12px;
+        }
+        h2 {
+          font-size: 50px;
+        }
+      }
+    }
+    &__slider {
+      &-item {
+        padding: 25px 35px;
+      }
+      .swiper {
+        &-arrow {
+          &-next {
+            right: -0.4em;
+          }
+          &-prev {
+            left: -0.4em;
+          }
+        }
       }
     }
   }
