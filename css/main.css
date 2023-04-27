@@ -874,6 +874,9 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 30px;
 }
 .header__inner .logo {
@@ -1152,15 +1155,18 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 278px;
-  margin: 0 auto;
 }
 .grid--service .gridItem__info p {
   color: #3d424d;
+  max-width: 280px;
+  margin: 0 auto;
 }
 .grid--service .gridItem:hover {
   -webkit-box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
           box-shadow: 0px 12px 24px rgba(16, 24, 40, 0.08);
+}
+.grid--service h4 br {
+  display: none;
 }
 .grid--achievement {
   margin: 50px 0;
@@ -1232,6 +1238,7 @@ svg {
       -ms-flex: 1;
           flex: 1;
   line-height: 1.65em;
+  max-width: 270px;
 }
 .grid--invest .gridItem .button {
   padding: 0.7em 1em;
@@ -1258,6 +1265,7 @@ svg {
   transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   cursor: pointer;
+  max-width: 370px;
 }
 .grid--selection .gridItem__image {
   margin-bottom: 0;
@@ -1288,7 +1296,7 @@ svg {
           justify-content: space-between;
 }
 .grid--selection .gridItem__info-row p {
-  max-width: 130px;
+  max-width: 150px;
 }
 .grid--selection .gridItem__info-row p strong {
   display: block;
@@ -1418,6 +1426,7 @@ svg {
   padding-left: 30px;
   position: relative;
   line-height: 1.65em;
+  font-size: 18px;
 }
 .scrollContent__body li::before {
   content: "";
@@ -1428,6 +1437,154 @@ svg {
   position: absolute;
   top: 13px;
   left: 14px;
+}
+
+.overview {
+  padding: 120px 0;
+}
+.overview__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+}
+.overview__inner-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+.overviewContent {
+  padding: 16px 16px;
+  width: calc(100% - 250px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  background: #f7f7fa;
+}
+.overviewContent--caption {
+  background: #ebebeb;
+  width: 250px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.overviewContent p {
+  color: #3d424d;
+  line-height: 1.5;
+}
+.overviewContent h6 {
+  font-weight: 700;
+}
+.overview h2 {
+  text-align: center;
+  font-weight: 700;
+}
+.overview .button {
+  font-size: 14px;
+  padding: 3px 8px;
+  background: rgba(50, 50, 124, 0.06);
+  border-radius: 8px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.overview .button:hover {
+  color: #3c50e0;
+}
+.overview .button:hover svg {
+  fill: #3c50e0;
+}
+.overview .button span {
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 4px;
+}
+.overview .button span svg {
+  width: 100%;
+  height: 100%;
+  fill: #32327c;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+}
+
+.partners {
+  padding: 112px 0;
+}
+.partners__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.partners__inner-text {
+  max-width: 465px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+.partners__inner-column {
+  width: calc(50% - 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 56px 20px;
+}
+.partnersItem {
+  width: calc(33.3% - 15px);
+  max-width: 163px;
+}
+.partnersItem .ratioImage {
+  padding-bottom: 25%;
+}
+.partnersItem .ratioImage img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.partners h2 {
+  font-weight: 700;
+}
+.partners p {
+  color: #3d424d;
 }
 
 .hero {
@@ -1444,7 +1601,8 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 30px;
-  min-height: calc(100vh - 350px);
+  height: calc(100vh - 350px);
+  max-height: 1100px;
 }
 .hero__inner-content {
   margin: 0 auto;
@@ -1474,13 +1632,27 @@ svg {
 }
 .hero__inner-banner {
   width: calc(100% - 530px);
-  max-width: 520px;
-  border-radius: 20px;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  max-width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.hero__inner-banner img {
+.hero__banner {
+  border-radius: 20px;
+  height: 100%;
+  max-height: 650px;
+}
+.hero__banner img {
   border-radius: inherit;
   width: 100%;
   height: 100%;
@@ -1666,6 +1838,18 @@ svg {
   }
   .grid--selection .gridItem__info {
     padding: 20px;
+  }
+  .grid h4 {
+    font-size: 22px;
+  }
+  .grid h4._sm {
+    font-size: 20px;
+  }
+  .grid p {
+    font-size: 15px;
+  }
+  .grid p._sm {
+    font-size: 13px;
   }
 }
 @media (max-width: 1025px) {
@@ -1890,6 +2074,42 @@ svg {
   .grid--selection .gridItem__info h4 {
     margin-bottom: 5px;
   }
+  .grid h4 {
+    font-size: 20px;
+  }
+  .grid h4._sm {
+    font-size: 18px;
+  }
+  .grid p {
+    font-size: 14px;
+  }
+  .grid p._sm {
+    font-size: 12px;
+  }
+
+  .overview {
+    padding: 100px 0;
+  }
+  .overview__inner {
+    gap: 45px;
+  }
+
+  .partners__inner {
+    gap: 20px;
+  }
+  .partners__inner-column {
+    width: calc(55% - 15px);
+    gap: 40px 20px;
+  }
+  .partners__inner-column._sm {
+    width: calc(45% - 15px);
+  }
+  .partners__inner-text {
+    gap: 20px;
+  }
+  .partners__inner p._lg {
+    font-size: 16px;
+  }
 
   .button {
     font-size: 14px;
@@ -1938,6 +2158,12 @@ svg {
   .scrollContent__body ul {
     gap: 15px;
   }
+  .scrollContent__body li {
+    font-size: 16px;
+  }
+  .scrollContent__body p._lg {
+    font-size: 16px;
+  }
 
   .grid__inner-row {
     gap: 25px 15px;
@@ -1969,6 +2195,9 @@ svg {
   .grid--service .gridItem__info {
     gap: 8px;
   }
+  .grid--service h4 br {
+    display: block;
+  }
   .grid--achievement .grid__inner {
     padding: 100px 0 60px;
   }
@@ -1977,11 +2206,11 @@ svg {
     max-width: 530px;
   }
   .grid--achievement .grid__inner-row {
-    gap: 20px;
+    gap: 10px;
   }
   .grid--achievement .gridItem {
-    width: calc(25% - 15px);
-    padding: 20px;
+    width: calc(25% - 8px);
+    padding: 20px 10px;
   }
   .grid--achievement .gridItem h3 {
     margin-bottom: 5px;
@@ -1993,7 +2222,7 @@ svg {
     gap: 10px;
   }
   .grid--invest .gridItem {
-    padding: 25px;
+    padding: 25px 20px;
     width: calc(33.3% - 7px);
   }
   .grid--selection .grid__inner-row {
@@ -2005,6 +2234,41 @@ svg {
   .grid--selection .gridItem {
     width: calc(50% - 15px);
     max-width: unset;
+  }
+  .grid h4 {
+    font-size: 18px;
+  }
+
+  .overview {
+    padding: 80px 0;
+  }
+  .overview__inner {
+    gap: 35px;
+  }
+  .overviewContent {
+    padding: 12px;
+    width: calc(100% - 214px);
+  }
+  .overviewContent--caption {
+    width: 214px;
+  }
+  .overviewContent p {
+    font-size: 14px;
+  }
+  .overviewContent h6._sm {
+    font-size: 14px;
+  }
+  .overviewContent .button {
+    font-size: 12px;
+  }
+  .overviewContent .button span {
+    width: 14px;
+    height: 14px;
+  }
+
+  .partners__inner-column {
+    width: calc(55% - 15px);
+    gap: 30px 20px;
   }
 }
 @media (max-width: 768px) {
@@ -2060,6 +2324,12 @@ svg {
   .scrollContent__body ul {
     gap: 10px;
   }
+  .scrollContent__body li {
+    font-size: 14px;
+  }
+  .scrollContent__body p._lg {
+    font-size: 14px;
+  }
 
   .grid__inner-row {
     gap: 20px;
@@ -2082,6 +2352,10 @@ svg {
   }
   .grid--service .gridItem__info {
     max-width: 245px;
+    margin: 0 auto;
+  }
+  .grid--service h4 br {
+    display: none;
   }
   .grid--achievement .grid__inner {
     padding: 80px 0 50px;
@@ -2119,6 +2393,29 @@ svg {
   }
   .grid--selection .gridItem {
     width: calc(50% - 10px);
+  }
+
+  .partners__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .partners__inner-column {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 25px 20px;
+  }
+  .partners__inner-column._sm {
+    width: 100%;
+  }
+  .partners__inner-text {
+    max-width: 450px;
+  }
+  .partnersItem {
+    max-width: 170px;
+  }
+  .partnersItem .ratioImage {
+    padding-bottom: 30%;
   }
 }
 @media (max-width: 660px) {
@@ -2171,7 +2468,7 @@ svg {
     gap: 20px 15px;
   }
   .grid--service .gridItem {
-    padding: 30px 20px;
+    padding: 30px 15px;
     width: calc(50% - 10px);
   }
   .grid--service .gridItem__image {
@@ -2203,6 +2500,19 @@ svg {
   }
   .grid--selection .gridItem__info {
     padding: 15px;
+  }
+
+  .overview {
+    padding: 60px 0;
+  }
+  .overview__inner {
+    gap: 30px;
+  }
+  .overviewContent {
+    width: calc(100% - 160px);
+  }
+  .overviewContent--caption {
+    width: 160px;
   }
 
   .button {
@@ -2245,8 +2555,10 @@ svg {
     gap: 20px 10px;
   }
   .grid--service .gridItem {
-    padding: 25px 15px;
-    width: calc(50% - 7px);
+    padding: 30px 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .grid--service .gridItem__info {
     gap: 5px;
@@ -2292,6 +2604,39 @@ svg {
   }
   .grid--selection .gridItem__info {
     padding: 15px;
+  }
+
+  .overview {
+    padding: 50px 0;
+  }
+  .overviewContent {
+    width: calc(100% - 160px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .overviewContent--caption {
+    width: 160px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .partners__inner-text {
+    gap: 15px;
+  }
+  .partners__inner-column {
+    gap: 20px;
+  }
+  .partnersItem {
+    max-width: 170px;
+  }
+  .partnersItem .ratioImage {
+    padding-bottom: 30%;
   }
 }
 @media (max-width: 460px) {
@@ -2348,6 +2693,15 @@ svg {
   .gridItem__image {
     margin-bottom: 10px;
   }
+  .grid--achievement .grid__inner-header {
+    margin-bottom: 20px;
+  }
+  .grid--achievement .grid__inner-row {
+    gap: 20px;
+  }
+  .grid--achievement .gridItem {
+    width: 100%;
+  }
   .grid--service .grid__inner-row {
     gap: 20px 10px;
   }
@@ -2359,15 +2713,28 @@ svg {
   .grid--service .gridItem__info {
     gap: 5px;
   }
-}
-@media (max-width: 370px) {
-  .grid--achievement .grid__inner-header {
-    margin-bottom: 20px;
+  .grid--service h4 br {
+    display: none;
   }
-  .grid--achievement .grid__inner-row {
-    gap: 20px;
+
+  .overview__inner-content {
+    overflow-x: scroll;
   }
-  .grid--achievement .gridItem {
-    width: 100%;
+  .overview__inner-row {
+    min-width: 500px;
+  }
+  .overviewContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .overviewContent--caption {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }

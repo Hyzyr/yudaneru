@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    min-height: calc(100vh - 350px);
+    height: calc(100vh - 350px);
+    max-height: 1100px;
 
     &-content {
       margin: 0 auto;
@@ -36,15 +37,22 @@
     }
     &-banner {
       width: calc(100% - 530px);
-      max-width: 520px;
-
-      border-radius: 20px;
       align-self: stretch;
+      max-width: 520px;
+      //display
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__banner {
+    border-radius: 20px;
+    height: 100%;
+    max-height: 650px;
 
-      img {
-        border-radius: inherit;
-        @include fullImage;
-      }
+    img {
+      border-radius: inherit;
+      @include fullImage;
     }
   }
 }
