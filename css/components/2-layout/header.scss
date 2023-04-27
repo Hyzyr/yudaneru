@@ -8,30 +8,51 @@
   transition-property: opacity, transform, padding;
   &__inner {
     position: relative;
-    display: flex;
-    align-items: center;
-    gap: 80px;
     z-index: 2;
-    padding: 9px 35px;
+    padding: 10px 35px;
     box-shadow: 0px 6px 20px rgba(50, 50, 124, 0.08);
     background: $white;
     border-radius: 12px;
+
+    //display
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .logo {
+      position: relative;
+      transition: 0.25s ease-out;
+    }
+
     .burger {
       display: none;
+    }
+    .nav {
+      flex-grow: 1;
+      max-width: 980px;
     }
   }
   &.sticky {
     position: fixed;
-    top: 0;
-    animation: 0.3s sticky ease-in;
+    top: -10px;
     transition-duration: 0.5s;
+    border-radius: 0 0 12px 12px;
+
+    .logo {
+      font-size: 14px;
+    }
+    .header__inner {
+      padding-top: 15px;
+    }
   }
   .autoContainer {
     max-width: 1360px;
   }
+  & + section {
+    margin-top: 120px;
+  }
 }
 .nav {
-  flex-grow: 1;
   &__inner {
     display: flex;
     width: 100%;
@@ -40,30 +61,31 @@
     &-group {
       display: flex;
       align-items: center;
+      gap: 30px;
     }
     &-link {
       position: relative;
       display: flex;
       align-items: center;
-      margin-right: 40px;
+      padding: 5px;
+
+      //font
       color: $black-2;
       font-family: $font-primary;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      line-height: 1;
+      line-height: 1.2;
       transition: 0.3s ease-out;
-      &:last-child {
-        margin-right: 0;
+
+      &.active {
+        color: $primary;
+        font-weight: 500;
       }
+
       &:hover {
         color: $primary;
-
-        &:after {
-          opacity: 1;
-          height: 2px;
-          width: 80%;
-        }
+        opacity: 0.8;
       }
     }
   }
