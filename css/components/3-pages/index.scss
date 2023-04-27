@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    min-height: calc(100vh - 350px);
+    height: calc(100vh - 350px);
+    max-height: 1100px;
 
     &-content {
       margin: 0 auto;
@@ -45,9 +46,9 @@
     }
   }
   &__banner {
-    max-height: 600px;
     border-radius: 20px;
     height: 100%;
+    max-height: 650px;
 
     img {
       border-radius: inherit;
