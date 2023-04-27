@@ -1471,13 +1471,27 @@ svg {
 }
 .hero__inner-banner {
   width: calc(100% - 530px);
-  max-width: 520px;
-  border-radius: 20px;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
+  max-width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.hero__inner-banner img {
+.hero__banner {
+  max-height: 600px;
+  border-radius: 20px;
+  height: 100%;
+}
+.hero__banner img {
   border-radius: inherit;
   width: 100%;
   height: 100%;

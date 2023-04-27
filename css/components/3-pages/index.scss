@@ -36,15 +36,22 @@
     }
     &-banner {
       width: calc(100% - 530px);
-      max-width: 520px;
-
-      border-radius: 20px;
       align-self: stretch;
+      max-width: 520px;
+      //display
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__banner {
+    max-height: 600px;
+    border-radius: 20px;
+    height: 100%;
 
-      img {
-        border-radius: inherit;
-        @include fullImage;
-      }
+    img {
+      border-radius: inherit;
+      @include fullImage;
     }
   }
 }
