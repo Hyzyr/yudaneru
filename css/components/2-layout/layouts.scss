@@ -467,8 +467,9 @@
   }
   .grid {
     &__inner {
-      &-row {
+      &-row { 
         gap: 40px 30px;
+      justify-content: space-evenly;
       }
       h2 {
         margin-bottom: 50px;
@@ -1004,6 +1005,7 @@
   .partners {
     &__inner {
       flex-wrap: wrap;
+      gap: 30px;
       &-column {
         width: 100%;
         max-width: 600px;
@@ -1150,7 +1152,9 @@
       &__image {
         margin-bottom: 10px;
       }
-      width: calc(50% - 7px);
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
     }
     &--service {
       .grid {
@@ -1294,14 +1298,7 @@
         margin-bottom: 30px;
       }
     }
-    &Item {
-      &__image {
-        margin-bottom: 10px;
-      }
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto;
-    }
+   
     &--achievement {
       .grid {
         &__inner {
@@ -1358,4 +1355,3 @@
     }
   }
 }
-

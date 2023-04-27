@@ -1791,6 +1791,9 @@ svg {
 
   .grid__inner-row {
     gap: 40px 30px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .grid__inner h2 {
     margin-bottom: 50px;
@@ -2398,6 +2401,7 @@ svg {
   .partners__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
   .partners__inner-column {
     width: 100%;
@@ -2546,7 +2550,9 @@ svg {
     gap: 20px 10px;
   }
   .gridItem {
-    width: calc(50% - 7px);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
   .gridItem__image {
     margin-bottom: 10px;
@@ -2684,14 +2690,6 @@ svg {
   }
   .grid__inner h2 {
     margin-bottom: 30px;
-  }
-  .gridItem {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  .gridItem__image {
-    margin-bottom: 10px;
   }
   .grid--achievement .grid__inner-header {
     margin-bottom: 20px;
