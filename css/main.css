@@ -1076,6 +1076,7 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
 .gridItem__info-social {
   display: -webkit-box;
@@ -1280,6 +1281,7 @@ svg {
           align-items: flex-start;
   text-align: left;
   padding: 25px;
+  gap: 0;
 }
 .grid--selection .gridItem__info-row {
   width: 100%;
@@ -1294,6 +1296,7 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
 .grid--selection .gridItem__info-row p {
   max-width: 150px;
@@ -2073,6 +2076,7 @@ svg {
   }
   .grid--selection .gridItem__info-row {
     margin-top: 12px;
+    max-width: 315px;
   }
   .grid--selection .gridItem__info h4 {
     margin-bottom: 5px;
