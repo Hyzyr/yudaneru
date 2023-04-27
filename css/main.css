@@ -401,11 +401,14 @@ svg {
   border-top: unset;
   -webkit-transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
   transition: max-height 0.3s ease, border-color 0s ease 0.3s, opacity 0.1s ease 0.2s;
-  scrollbar-width: none; /* Firefox 64 */
-  -ms-overflow-style: none; /* Internet Explorer 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
+  -ms-overflow-style: none;
+  /* Internet Explorer 11 */
   z-index: 1;
 }
-.input--select .input__dropdown::-webkit-scrollbar { /** WebKit */
+.input--select .input__dropdown::-webkit-scrollbar {
+  /** WebKit */
   display: none;
 }
 .input--select .input__dropdown-item {
@@ -1591,24 +1594,29 @@ svg {
   .autoContainer {
     padding: 0 40px;
   }
+
   h1 {
     font-size: 52px;
   }
+
   h2 {
     font-size: 45px;
   }
   h2._sm {
     font-size: 38px;
   }
+
   h3 {
     font-size: 34px;
   }
+
   .scroll__inner-content {
     gap: 25px;
   }
   .scrollContent__body ul {
     gap: 25px;
   }
+
   .grid__inner-row {
     gap: 40px 30px;
   }
@@ -1664,21 +1672,26 @@ svg {
   body {
     font-size: 13px;
   }
+
   .autoContainer {
     padding: 0 30px;
   }
+
   h1 {
     font-size: 48px;
   }
+
   h2 {
     font-size: 42px;
   }
   h2._sm {
     font-size: 36px;
   }
+
   h3 {
     font-size: 32px;
   }
+
   .header {
     padding: 25px 0;
   }
@@ -1696,6 +1709,7 @@ svg {
     display: block;
     z-index: 2;
   }
+
   .nav {
     position: fixed;
     top: 0;
@@ -1792,6 +1806,7 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+
   .scroll__inner-tabs {
     width: 260px;
   }
@@ -1809,6 +1824,7 @@ svg {
   .scrollContent__body ul {
     gap: 20px;
   }
+
   .grid__inner-row {
     gap: 35px 25px;
   }
@@ -1874,6 +1890,7 @@ svg {
   .grid--selection .gridItem__info h4 {
     margin-bottom: 5px;
   }
+
   .button {
     font-size: 14px;
   }
@@ -1882,24 +1899,29 @@ svg {
   .autoContainer {
     padding: 0 25px;
   }
+
   h1 {
     font-size: 45px;
   }
+
   h2 {
     font-size: 40px;
   }
   h2._sm {
     font-size: 32px;
   }
+
   h3 {
     font-size: 28px;
   }
+
   h4 {
     font-size: 22px;
   }
   h4._sm {
     font-size: 20px;
   }
+
   .scroll__inner-tabs {
     width: 245px;
   }
@@ -1916,6 +1938,7 @@ svg {
   .scrollContent__body ul {
     gap: 15px;
   }
+
   .grid__inner-row {
     gap: 25px 15px;
   }
@@ -1988,24 +2011,30 @@ svg {
   body {
     font-size: 12px;
   }
+
   .autoContainer {
     padding: 0 15px;
   }
+
   h1 {
     font-size: 40px;
   }
+
   h2 {
     font-size: 36px;
   }
   h2._sm {
     font-size: 28px;
   }
+
   h3 {
     font-size: 24px;
   }
+
   h4 {
     font-size: 20px;
   }
+
   .scroll__inner-tabs {
     width: 230px;
     padding: 12px;
@@ -2031,6 +2060,7 @@ svg {
   .scrollContent__body ul {
     gap: 10px;
   }
+
   .grid__inner-row {
     gap: 20px;
   }
@@ -2126,6 +2156,7 @@ svg {
   .scrollContent__header.caption {
     margin-bottom: 25px;
   }
+
   .grid__inner-row {
     gap: 20px 15px;
   }
@@ -2173,6 +2204,7 @@ svg {
   .grid--selection .gridItem__info {
     padding: 15px;
   }
+
   .button {
     font-size: 12px;
   }
@@ -2181,21 +2213,25 @@ svg {
   ._hideMob {
     display: none;
   }
+
   h1 {
     font-size: 36px;
   }
+
   h2 {
     font-size: 32px;
   }
   h2._sm {
     font-size: 24px;
   }
+
   p {
     font-size: 14px;
   }
   p._lg {
     font-size: 16px;
   }
+
   .grid__inner-row {
     gap: 20px 10px;
   }
@@ -2262,12 +2298,15 @@ svg {
   h1 {
     font-size: 32px;
   }
+
   h2 {
     font-size: 28px;
   }
+
   h3 {
     font-size: 22px;
   }
+
   .scroll__inner {
     gap: 20px;
   }
@@ -2294,6 +2333,7 @@ svg {
     width: 4px;
     height: 4px;
   }
+
   .grid__inner-row {
     gap: 20px;
   }
