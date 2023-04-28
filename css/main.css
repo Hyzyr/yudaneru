@@ -1503,6 +1503,9 @@ svg {
   font-weight: inherit;
 }
 .hero__inner-content .button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-top: 45px;
 }
 .hero__inner-banner {
