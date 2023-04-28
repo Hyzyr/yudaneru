@@ -10,6 +10,7 @@
   @include layouts-1160;
   @include header-1160;
   @include index-1160;
+  @include contact-1160;
 }
 @media (max-width: 1025px) {
   body {
@@ -35,6 +36,7 @@
   @include footer-940;
   @include index-940;
   @include about-940;
+  @include contact-940;
 }
 @media (max-width: 768px) {
   body {
@@ -48,6 +50,7 @@
   @include header-768;
   @include index-768;
   @include about-768;
+  @include contact-768;
 }
 @media (max-width: 660px) {
   @include layouts-660;
@@ -64,6 +67,7 @@
   @include footer-560;
   @include index-560;
   @include about-560;
+  @include contact-560;
 }
 @media (max-width: 460px) {
   @include typography-460;
