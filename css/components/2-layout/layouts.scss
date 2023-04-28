@@ -33,6 +33,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 10px;
       &-social {
         display: flex;
         align-items: center;
@@ -213,6 +214,7 @@
           align-items: flex-start;
           text-align: left;
           padding: 25px;
+          gap: 0;
           &-row {
             width: 100%;
             max-width: 290px;
@@ -220,6 +222,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 10px;
             p {
               max-width: 150px;
               strong {
@@ -559,6 +562,7 @@
             padding: 20px;
             &-row {
               margin-top: 12px;
+            max-width: 315px;
             }
             h4 {
               margin-bottom: 5px;

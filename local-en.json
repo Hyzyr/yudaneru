@@ -1,0 +1,367 @@
+{
+  "nav": {
+    "link-1": "Home",
+    "link-2": "About Us",
+    "link-3": "Performance",
+    "link-4": "Contact Us",
+    "link-5": "Privacy Policy"
+  },
+  "hero": {
+    "caption": "FIND THE BEST PROPERTY",
+    "title": "Fully InvestedSM in Better Outcomes",
+    "paragraph": "As a global investment firm, we foster diverse perspectives and embrace innovation to help our clients navigate the uncertainty of capital markets.",
+    "button": "Contact Us"
+  },
+  "whyUs": {
+    "title": "Why Choose Us",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed a do eiusmod tempor incididunt ut labore et dolore magna  are aliqua. Ut enim ad minim veniam, quis nos",
+    "item-1": {
+      "title": "Principled/Trust",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed a do eiusmod tempor incididunt "
+    },
+    "item-2": {
+      "title": "Tailored/Customized",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed a do eiusmod tempor incididunt "
+    },
+    "item-2": {
+      "title": "Hungry/Ambitious/",
+      "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed a do eiusmod tempor incididunt "
+    }
+  },
+  "service": {
+    "title": "What We Do",
+    "item-1": {
+      "title": "Investment Professional",
+      "paragraph": "With over 1 million+ homes for sale available on the website, Trulia can match you with a house."
+    },
+    "item-2": {
+      "title": "What We Do",
+      "paragraph": "With over 1 million+ homes for sale available on the website, Trulia can match you with a house."
+    },
+    "item-3": {
+      "title": "Institutions & Consultants",
+      "paragraph": "With over 1 million+ homes for sale available on the website, Trulia can match you with a house."
+    }
+  },
+  "wayInvest": {
+    "title": "Ways to Invest",
+    "item-1": {
+      "title": "Personal",
+      "titleBr": "Investment Account",
+      "paragraph": "Open a standard account and build a portfolio of alternative investments.",
+      "button": "Contact Us"
+    },
+    "item-2": {
+      "title": "Tax-Advantaged ",
+      "titleBr": "Investing",
+      "paragraph": "Roll over an existing retirement account or open a new Traditional or Roth IRA.",
+      "button": "Contact Us"
+    },
+    "item-3": {
+      "title": "Through Your",
+      "titleBr": "Advisor",
+      "paragraph": "Open a standard account and build a portfolio of alternative investments.",
+      "button": "Contact Us"
+    }
+  },
+  "testimonials": {
+    "caption": "POWERING NEXT-GENERATION PORTFOLIOS",
+    "title": "1,769,369",
+    "paragraph": "people are using Yudaneru to start investing smarter",
+    "item-1": {
+      "paragraph": "“Lorem ipsum dolor sit amet. Est sequi debitis id asperiores ullam et libero corporis id blanditiis sequi a possimus voluptas vel dolorem quia eum quam voluptates.”",
+      "subTitle": "FORTUNE"
+    }
+  },
+  "footer": {
+    "column-1": {
+      "title": "Office Headquaters",
+      "paragraph": "Balboa Park,San Diego, California,92104,United States"
+    },
+    "column-2": {
+      "title": "Company",
+      "link-1": "Home",
+      "link-2": "About Us",
+      "link-3": "Performance",
+      "link-4": "Contact"
+    },
+    "column-2": {
+      "title": "About us",
+      "paragraph": "We are the real estate agency in Sydney, with agents available to answer any question 24/7."
+    },
+    "copy": {
+      "paragraph-1": "All rights reserved by ©Creative UI Design 2023.",
+      "paragraph-2": "Privacy Policy"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "paragraph-1": "Lorem ipsum dolor sit amet. Ut galisum blanditiis sit soluta facilis ut reprehenderit minima vel ratione quas. Qui enim minima ut laboriosam consequuntur est possimus repudiandae qui voluptates error et dolorem minus in unde voluptatem vel sint doloremque.",
+    "paragraph-2": " Vel voluptate voluptatum qui doloremque autem qui omnis ipsam qui incidunt vero aut corrupti recusandae ea quod nobis. Vel odio Quis sit libero maiores ut accusantium expedita aut dicta rerum.",
+    "button": "Contact Us"
+  },
+  "team": {
+    "title": "Our Team",
+    "item-1": {
+      "name": "Guy Hawkins",
+      "job": "President of Sales"
+    },
+    "item-2": {
+      "name": "Jenny Wilson",
+      "job": "President of Sales"
+    },
+    "item-3": {
+      "name": "Tóth Kamilla",
+      "job": "President of Sales"
+    },
+    "item-4": {
+      "name": "Szekeres Dalma",
+      "job": "President of Sales"
+    },
+    "item-5": {
+      "name": "Wade Warren",
+      "job": "President of Sales"
+    },
+    "item-6": {
+      "name": "Robert Fox",
+      "job": "President of Sales"
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed a do eiusmod tempor incididunt ut labore et dolore magna  are aliqua."
+  },
+  "history": {
+    "title": "Our Company History",
+    "item-1": {
+      "title": "Title here",
+      "paragraph": "In quis distinctio non quia dolorum At aliquid magni est sint galisum! Et fugiat quasi vel consequatur ullam et ipsa doloremque est ratione accusamus."
+    },
+    "item-2": {
+      "title": "Title here",
+      "paragraph": "In quis distinctio non quia dolorum At aliquid magni est sint galisum! Et fugiat quasi vel consequatur ullam et ipsa doloremque est ratione accusamus."
+    },
+    "item-3": {
+      "title": "Title here",
+      "paragraph": "In quis distinctio non quia dolorum At aliquid magni est sint galisum! Et fugiat quasi vel consequatur ullam et ipsa doloremque est ratione accusamus."
+    },
+    "item-4": {
+      "title": "Title here",
+      "paragraph": "In quis distinctio non quia dolorum At aliquid magni est sint galisum! Et fugiat quasi vel consequatur ullam et ipsa doloremque est ratione accusamus."
+    }
+  },
+  "overview": {
+    "item-1": {
+      "title": "Name",
+      "paragraph": "Yudaneru Real Estate Investing company"
+    },
+    "item-2": {
+      "title": "Established",
+      "paragraph": "March 2015"
+    },
+    "item-3": {
+      "title": "Paid-in capital",
+      "paragraph": "JPY 300 million"
+    },
+    "item-4": {
+      "title": "Representative",
+      "paragraph": "Koki Miura President & CEO",
+      "button": "CEO Message"
+    },
+    "item-5": {
+      "title": "Office Location",
+      "paragraph": "Balboa Park,San Diego,California,2104, United States",
+      "button": "CEO Message"
+    },
+    "item-6": {
+      "title": "Shareholder",
+      "paragraph": "Yudaneru Real Estate Holdings, Inc. (100%)"
+    },
+    "item-7": {
+      "title": "Employees and Officers",
+      "paragraph": "168 (including 6 Executive Officers and 2 Statutory Auditors) *As of April 1, 2022"
+    },
+    "item-8": {
+      "title": "Business operations",
+      "paragraph": "Investment management business, Type II financial instruments business, Investment advisory and agency business, Real estate trading business"
+    },
+    "item-9": {
+      "title": "Registrations, licenses, etc.",
+      "paragraph": "Financial instruments business operator registration; Commissioner of the Kanto Local Finance Bureau (Financial Instruments) No.374Licensed for discretionary proxy in realty trading; Minister of Land, Infrastructure and Transport Permit No,18Licensed for real estate trading; Governor of Tokyo (4) No.81679Real estate specified joint enterprise operator; Financial Services Agency Commissione and Minister of Land, Infrastructure and Transport Permit No,78"
+    },
+    "item-10": {
+      "title": "Memberships",
+      "paragraph": "The Investment Trusts Association, JapanJapan Investment Advisors AssociationThe Association for Real Estate Securitization (regular member), etc."
+    }
+  },
+  "performance": "Performance" , 
+  "achievement": {
+    "title": "Our Achievement",
+    "paragraph": "See and understand what we have achieved in the last few years. We have completed so many projects in this period.",
+    "item-1": {
+      "title": "20500+",
+      "paragraph": "Completed Property"
+    },
+    "item-2": {
+      "title": "7600+",
+      "paragraph": "Property Sales"
+    },
+    "item-1": {
+      "title": "12300+",
+      "paragraph": "Apartment Rent"
+    },
+    "item-1": {
+      "title": "15200+",
+      "paragraph": "Happy Clients"
+    }
+  },
+  "selectionInvestment": {
+    "title": "A Selection Of Our Investments",
+    "item-1": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-2": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-3": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-4": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-5": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-6": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-7": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-8": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    },
+    "item-9": {
+      "title": "Office Complex",
+      "paragraphStrong-1": "LOCATION:",
+      "paragraph-1": "Bedfont Lakes, West London",
+      "paragraphStrong-2": "SECTOR::",
+      "paragraph-2": "Office / Business Park",
+      "paragraphStrong-3": "SIZE::",
+      "paragraph-3": "374,046 sq ft"
+    }
+  },
+  "result": {
+    "title-1": "How We Achieve Our Results",
+    "paragraph": "Lorem ipsum dolor sit amet. Ut galisum blanditiis sit soluta facilis ut reprehenderit minima vel ratione quas. Qui enim minima ut laboriosam consequuntur est possimus repudiandae.",
+    "title-2": "GK-TK STRUCTURE",
+    "title-3": "BASIC TMK STRUCTURE (WITH GK-TK STRUCTURE)"
+  },
+  "contactUs": {
+    "title": "Contact US",
+    "item": {
+      "title": "Contact Info",
+      "paragraph": "Our reports will help you better understand your audience and target the right message to the right person. Send your email marketing campaign in a fast and simple way.",
+      "location": "34 Street Name, City Name Here, United States.",
+      "phone": "+1 (222) 345 6789",
+      "gmail": "info@mywebsite.com"
+    }
+  },
+  "policy": {
+    "tabs": {
+      "title": "Policies",
+      "tab-1": "Solicitation Policy",
+      "tab-2": "Privacy Policy",
+      "tab-3": "The basic policy against anti-social forces",
+      "tab-2": "The complaint processing and dispute handling policy"
+    },
+    "item-1": {
+      "title": "Privacy Policy",
+      "subTitle": "Effective as of: Mar 9, 2023",
+      "paragraph-1": "This Privacy Policy describes how Yudaneru collects, uses, and discloses information associated with an identified or identifiable individual (referred to in this Privacy Policy as “Personal Data”) and what choices you have around this activity. If you have any questions, please don’t hesitate to contact us.",
+      "paragraph-2": "When we refer to “Yudaneru”, we mean Yudaneru Technologies, LLC or Yudaneru Technologies Limited, as explained in more detail in the “Identifying the Data Controller and Processor” section below."
+    },
+    "item-2": {
+      "title": "Solicitation Policy",
+      "paragraph-1": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam. Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "paragraph-2": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione.",
+      "paragraph-3": "Nam veritatis consequatur est omnis debitis At consequatur earum ea quam facilis ut facere repellendus et necessitatibus temporibus aut magnam nesciunt."
+    },
+    "item-3": {
+      "title": "Privacy Policy",
+      "titleSmall": "What Information do we Collect?",
+      "paragraph-1": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam. Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "paragraph-2": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione.",
+      "paragraph-3": "Nam veritatis consequatur est omnis debitis At consequatur earum ea quam facilis ut facere repellendus et necessitatibus temporibus aut magnam nesciunt.",
+      "paragraph-4": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam. Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "paragraph-5": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione.",
+      "paragraphStrong": "Nam veritatis consequatur est omnis debitis At consequatur earum:",
+      "list-1": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam.",
+      "list-2": "Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "list-3": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione."
+    },
+    "item-4": {
+      "title": "The basic policy against anti-social forces",
+      "paragraph-1": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam. Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "paragraph-2": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione.",
+      "paragraph-3": "Nam veritatis consequatur est omnis debitis At consequatur earum ea quam facilis ut facere repellendus et necessitatibus temporibus aut magnam nesciunt."
+    },
+    "item-5": {
+      "title": "The complaint processing and dispute handling policy",
+      "paragraph-1": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam. Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "paragraph-2": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione.",
+      "paragraphStrong": "Nam veritatis consequatur est omnis debitis At consequatur earum:",
+      "list-1": "Lorem ipsum dolor sit amet. Eos quos perferendis eos velit consequuntur rem nostrum odit vel amet debitis non labore ipsam.",
+      "list-2": "Non nihil fugiat cum velit dolorum ea tenetur beatae eos inventore quidem ad consectetur perferendis id quia recusandae quo consectetur accusamus.",
+      "list-3": "Eos molestias neque est fuga officiis et omnis officia qui aspernatur cupiditate aut recusandae aperiam a placeat repellendus ea aliquid ratione."
+    }
+  }
+}
