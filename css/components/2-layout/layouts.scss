@@ -116,7 +116,6 @@
     }
   }
   &--achievement {
-    margin: 50px 0;
     background: $white-2;
     .grid {
       &__inner {
@@ -185,6 +184,8 @@
   }
   &--selection {
     background: $white-1;
+    padding: 120px 0;
+
     .grid {
       &__inner {
         &-row {
@@ -423,6 +424,7 @@
       }
     }
     &--selection {
+      padding: 100px 0;
       .grid {
         &__inner {
           &-row {
@@ -456,6 +458,7 @@
 }
 @mixin layouts-1025 {
   .scroll {
+    padding: 80px 0;
     &__inner {
       &-tabs {
         width: 260px;
@@ -546,6 +549,8 @@
       }
     }
     &--selection {
+      padding: 80px 0;
+
       .grid {
         &__inner {
           &-row {
@@ -719,6 +724,7 @@
 }
 @mixin layouts-768 {
   .scroll {
+    padding: 60px 0;
     &__inner {
       &-tabs {
         width: 230px;
@@ -834,6 +840,8 @@
       }
     }
     &--selection {
+      padding: 60px 0;
+
       .grid {
         &__inner {
           &-row {
@@ -852,6 +860,8 @@
 }
 @mixin layouts-660 {
   .scroll {
+    padding: 40px 0;
+
     &__inner {
       display: flex;
       flex-direction: column;

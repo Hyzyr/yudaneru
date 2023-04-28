@@ -264,6 +264,7 @@
     }
   }
   .partners {
+    padding: 80px 0;
     &__inner {
       &-column {
         width: calc(55% - 15px);
@@ -272,6 +273,8 @@
     }
   }
   .roadmap {
+    padding: 80px 0;
+
     &__inner {
       &-track {
         flex-direction: column;
@@ -316,6 +319,7 @@
 }
 @mixin about-768 {
   .partners {
+    padding: 60px 0;
     &__inner {
       flex-wrap: wrap;
       gap: 30px;
@@ -338,6 +342,9 @@
         padding-bottom: 30%;
       }
     }
+  }
+  .roadmap {
+    padding: 60px 0;
   }
 }
 @mixin about-660 {
@@ -404,12 +411,12 @@
         overflow-x: scroll;
       }
       &-row {
-        min-width: 500px;
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
     &Content {
-      flex-direction: column;
-      align-items: flex-start;
+      width: 100%;
       &--caption {
         justify-content: flex-start;
       }

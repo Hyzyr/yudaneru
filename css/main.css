@@ -1163,7 +1163,6 @@ svg {
   display: none;
 }
 .grid--achievement {
-  margin: 50px 0;
   background: #f7f7fa;
 }
 .grid--achievement .grid__inner {
@@ -1239,6 +1238,7 @@ svg {
 }
 .grid--selection {
   background: #fafafa;
+  padding: 120px 0;
 }
 .grid--selection .grid__inner-row {
   gap: 30px;
@@ -2152,7 +2152,7 @@ svg {
 .map__inner-info {
   position: relative;
   z-index: 1;
-  margin-left: 20%;
+  margin-left: 35px;
   width: 100%;
   max-width: 375px;
   padding: 40px;
@@ -2304,6 +2304,9 @@ svg {
   .grid--invest .grid__inner {
     padding: 100px 0 80px;
   }
+  .grid--selection {
+    padding: 100px 0;
+  }
   .grid--selection .grid__inner-row {
     gap: 25px;
   }
@@ -2428,6 +2431,9 @@ svg {
     display: block;
     z-index: 2;
   }
+  .header + section {
+    margin-top: 100px;
+  }
   .nav {
     position: fixed;
     top: 0;
@@ -2525,6 +2531,9 @@ svg {
     -webkit-transform: translate(0);
             transform: translate(0);
   }
+  .scroll {
+    padding: 80px 0;
+  }
   .scroll__inner-tabs {
     width: 260px;
   }
@@ -2591,6 +2600,9 @@ svg {
   }
   .grid--invest .gridItem {
     padding: 27px;
+  }
+  .grid--selection {
+    padding: 80px 0;
   }
   .grid--selection .grid__inner-row {
     gap: 25px 15px;
@@ -2896,9 +2908,15 @@ svg {
     width: 14px;
     height: 14px;
   }
+  .partners {
+    padding: 80px 0;
+  }
   .partners__inner-column {
     width: calc(55% - 15px);
     gap: 30px 20px;
+  }
+  .roadmap {
+    padding: 80px 0;
   }
   .roadmap__inner-track {
     -webkit-box-orient: vertical;
@@ -2966,6 +2984,9 @@ svg {
   }
   h4 {
     font-size: 20px;
+  }
+  .scroll {
+    padding: 60px 0;
   }
   .scroll__inner-tabs {
     width: 230px;
@@ -3055,6 +3076,9 @@ svg {
   .grid--invest .gridItem p {
     margin-bottom: 20px;
   }
+  .grid--selection {
+    padding: 60px 0;
+  }
   .grid--selection .grid__inner-row {
     gap: 25px 15px;
   }
@@ -3072,6 +3096,9 @@ svg {
   }
   .header__inner .logo {
     font-size: 14px;
+  }
+  .header + section {
+    margin-top: 90px;
   }
   .hero {
     padding: 40px 0;
@@ -3118,6 +3145,9 @@ svg {
   .feedbacks__slider .swiper-arrow-prev {
     left: -0.4em;
   }
+  .partners {
+    padding: 60px 0;
+  }
   .partners__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3141,6 +3171,9 @@ svg {
   .partnersItem .ratioImage {
     padding-bottom: 30%;
   }
+  .roadmap {
+    padding: 60px 0;
+  }
   .map__inner {
     padding: 50% 0 60px 0;
   }
@@ -3158,6 +3191,9 @@ svg {
   }
 }
 @media (max-width: 660px) {
+  .scroll {
+    padding: 40px 0;
+  }
   .scroll__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3542,9 +3578,6 @@ svg {
     overflow-x: scroll;
   }
   .overview__inner-row {
-    min-width: 500px;
-  }
-  .overviewContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3552,6 +3585,9 @@ svg {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .overviewContent {
+    width: 100%;
   }
   .overviewContent--caption {
     -webkit-box-pack: start;
