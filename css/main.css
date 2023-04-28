@@ -1313,7 +1313,7 @@ svg {
 }
 
 .scroll {
-  margin: 190px 0 120px;
+  padding: 100px 0;
 }
 .scroll__inner {
   display: -webkit-box;

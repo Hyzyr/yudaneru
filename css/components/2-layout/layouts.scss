@@ -8,7 +8,6 @@
   margin: 0 auto;
   padding: 0 60px;
 }
-
 .grid {
   &__inner {
     &-row {
@@ -251,7 +250,7 @@
   }
 }
 .scroll {
-  margin: 190px 0 120px;
+  padding: 100px 0;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -562,7 +561,7 @@
             padding: 20px;
             &-row {
               margin-top: 12px;
-            max-width: 315px;
+              max-width: 315px;
             }
             h4 {
               margin-bottom: 5px;
