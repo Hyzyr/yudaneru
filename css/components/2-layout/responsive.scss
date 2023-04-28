@@ -22,7 +22,9 @@
   @include header-1025;
   @include layouts-1025;
   @include components-1025;
+  @include footer-1025;
   @include index-1025;
+  @include about-1025;
 }
 @media (max-width: 940px) {
   .autoContainer {
@@ -30,7 +32,9 @@
   }
   @include typography-940;
   @include layouts-940;
+  @include footer-940;
   @include index-940;
+  @include about-940;
 }
 @media (max-width: 768px) {
   body {
@@ -43,10 +47,12 @@
   @include layouts-768;
   @include header-768;
   @include index-768;
+  @include about-768;
 }
 @media (max-width: 660px) {
   @include layouts-660;
   @include components-660;
+  @include about-660;
 }
 @media (max-width: 560px) {
   ._hideMob {
@@ -54,10 +60,15 @@
   }
   @include typography-560;
   @include layouts-560;
+  @include header-560;
+  @include footer-560;
+  @include index-560;
+  @include about-560;
 }
 @media (max-width: 460px) {
   @include typography-460;
   @include layouts-460;
+  @include about-460;
 }
 @media (max-width: 370px) {
 }

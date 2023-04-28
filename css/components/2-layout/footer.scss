@@ -13,17 +13,18 @@
     &-info {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 24px;
       width: 270px;
+
       .logo {
         font-size: 22px;
-        margin-bottom: 10px;
         img {
           object-position: left;
         }
       }
       p {
         color: rgba($white, 0.6);
+        margin-top: 1em;
       }
     }
     &-link {
@@ -111,6 +112,77 @@
       transform: translateX(-50%);
       background: $blue;
       z-index: -1;
+    }
+  }
+}
+@mixin footer-1025 {
+  .footer {
+    &__inner {
+      padding: 80px 0;
+    }
+  }
+}
+@mixin footer-940 {
+  .footer {
+    &__inner {
+      padding: 60px 0;
+      flex-wrap: wrap;
+      gap: 30px 20px;
+
+      &-links {
+        width: calc(100% - 300px);
+      }
+      &-social {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@mixin footer-560 {
+  .footer {
+    &__inner {
+      &-info {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &-group {
+          width: 55%;
+          max-width: 210px;
+          padding-left: 10px;
+
+          border-left: 1px solid rgba($white, 0.2);
+        }
+        h6 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      &-links {
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 30px;
+        order: 1;
+        border-top: 1px solid rgba($white, 0.2);
+      }
+      &-social {
+        width: 100%;
+        max-width: 400px;
+
+        &-links {
+          justify-content: center;
+        }
+      }
+    }
+    &__copyright {
+      font-size: 10px;
+      flex-direction: column-reverse;
+      gap: 0.5em;
     }
   }
 }

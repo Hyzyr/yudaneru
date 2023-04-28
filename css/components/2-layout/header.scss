@@ -266,8 +266,31 @@
   .header {
     top: 15px;
     &__inner {
+      padding: 10px 15px;
       .logo {
         font-size: 14px;
+      }
+    }
+  }
+}
+
+@mixin header-560 {
+  .header {
+    top: 10px;
+    &__inner {
+      padding: 10px 10px;
+      .logo {
+        font-size: 12px;
+      }
+      .burger {
+        font-size: 8px;
+      }
+    }
+    &.sticky {
+      .header__inner {
+        .logo {
+          font-size: 12px;
+        }
       }
     }
   }

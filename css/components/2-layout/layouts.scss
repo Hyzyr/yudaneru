@@ -67,6 +67,9 @@
       }
     }
   }
+  &--team {
+    padding: 120px 0;
+  }
   &--service {
     padding: 120px 0;
     .grid {
@@ -344,110 +347,6 @@
     }
   }
 }
-.overview {
-  padding: 120px 0;
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 60px;
-    &-row {
-      display: flex;
-      border-bottom: 1px solid $white-3;
-    }
-  }
-  &Content {
-    padding: 16px 16px;
-    width: calc(100% - 250px);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    background: $white-2;
-    &--caption {
-      background: $white-4;
-      width: 250px;
-      align-items: flex-start;
-    }
-    p {
-      color: $black-2;
-      line-height: 1.5;
-    }
-    h6 {
-      font-weight: 700;
-    }
-  }
-  h2 {
-    text-align: center;
-    font-weight: 700;
-  }
-  .button {
-    font-size: 14px;
-    padding: 3px 8px;
-    background: rgba(50, 50, 124, 0.06);
-    border-radius: 8px;
-    font-weight: 400;
-    white-space: nowrap;
-    &:hover {
-      color: $secondary;
-      svg {
-        fill: $secondary;
-      }
-    }
-    span {
-      width: 16px;
-      height: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-left: 4px;
-      svg {
-        width: 100%;
-        height: 100%;
-        fill: $primary;
-        @include transition;
-      }
-    }
-  }
-}
-.partners {
-  padding: 112px 0;
-  &__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    &-text {
-      max-width: 465px;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-    }
-    &-column {
-      width: calc(50% - 15px);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 56px 20px;
-    }
-  }
-  &Item {
-    width: calc(33.3% - 15px);
-    max-width: 163px;
-    .ratioImage {
-      padding-bottom: 25%;
-      img {
-        object-fit: contain;
-      }
-    }
-  }
-  h2 {
-    font-weight: 700;
-  }
-  p {
-    color: $black-2;
-  }
-}
 
 @mixin layouts-1160 {
   .scroll {
@@ -466,9 +365,9 @@
   }
   .grid {
     &__inner {
-      &-row { 
+      &-row {
         gap: 40px 30px;
-      justify-content: space-evenly;
+        justify-content: space-evenly;
       }
       h2 {
         margin-bottom: 50px;
@@ -476,6 +375,9 @@
     }
     &Item {
       width: calc(33.3% - 20px);
+    }
+    &--team {
+      padding: 100px 0;
     }
     &--service {
       padding: 100px 0;
@@ -588,6 +490,9 @@
     &Item {
       width: calc(33.3% - 18px);
     }
+    &--team {
+      padding: 80px 0;
+    }
     &--service {
       padding: 80px 0;
       .grid {
@@ -672,32 +577,6 @@
       font-size: 14px;
       &._sm {
         font-size: 12px;
-      }
-    }
-  }
-  .overview {
-    padding: 100px 0;
-    &__inner {
-      gap: 45px;
-    }
-  }
-  .partners {
-    &__inner {
-      gap: 20px;
-      &-column {
-        width: calc(55% - 15px);
-        gap: 40px 20px;
-        &._sm {
-          width: calc(45% - 15px);
-        }
-      }
-      &-text {
-        gap: 20px;
-      }
-      p {
-        &._lg {
-          font-size: 16px;
-        }
       }
     }
   }
@@ -834,43 +713,6 @@
       font-size: 18px;
     }
   }
-  .overview {
-    padding: 80px 0;
-
-    &__inner {
-      gap: 35px;
-    }
-    &Content {
-      padding: 12px;
-      width: calc(100% - 214px);
-      &--caption {
-        width: 214px;
-      }
-      p {
-        font-size: 14px;
-      }
-      h6 {
-        &._sm {
-          font-size: 14px;
-        }
-      }
-      .button {
-        font-size: 12px;
-        span {
-          width: 14px;
-          height: 14px;
-        }
-      }
-    }
-  }
-  .partners {
-    &__inner {
-      &-column {
-        width: calc(55% - 15px);
-        gap: 30px 20px;
-      }
-    }
-  }
 }
 @mixin layouts-768 {
   .scroll {
@@ -923,6 +765,9 @@
       &__image {
         margin-bottom: 20px;
       }
+    }
+    &--team {
+      padding: 60px 0;
     }
     &--service {
       padding: 60px 0;
@@ -1001,30 +846,6 @@
       }
     }
   }
-  .partners {
-    &__inner {
-      flex-wrap: wrap;
-      gap: 30px;
-      &-column {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        gap: 25px 20px;
-        &._sm {
-          width: 100%;
-        }
-      }
-      &-text {
-        max-width: 450px;
-      }
-    }
-    &Item {
-      max-width: 170px;
-      .ratioImage {
-        padding-bottom: 30%;
-      }
-    }
-  }
 }
 @mixin layouts-660 {
   .scroll {
@@ -1067,6 +888,9 @@
     &Item {
       width: calc(50% - 10px);
       max-width: unset;
+    }
+    &--team {
+      padding: 50px 0;
     }
     &--service {
       padding: 50px 0;
@@ -1124,18 +948,6 @@
             padding: 15px;
           }
         }
-      }
-    }
-  }
-  .overview {
-    padding: 60px 0;
-    &__inner {
-      gap: 30px;
-    }
-    &Content {
-      width: calc(100% - 160px);
-      &--caption {
-        width: 160px;
       }
     }
   }
@@ -1228,34 +1040,6 @@
       }
     }
   }
-  .overview {
-    padding: 50px 0;
-    &Content {
-      width: calc(100% - 160px);
-      flex-direction: column;
-      align-items: flex-start;
-      &--caption {
-        width: 160px;
-        justify-content: flex-start;
-      }
-    }
-  }
-  .partners {
-    &__inner {
-      &-text {
-        gap: 15px;
-      }
-      &-column {
-        gap: 20px;
-      }
-    }
-    &Item {
-      max-width: 170px;
-      .ratioImage {
-        padding-bottom: 30%;
-      }
-    }
-  }
 }
 @mixin layouts-460 {
   .scroll {
@@ -1297,7 +1081,7 @@
         margin-bottom: 30px;
       }
     }
-   
+
     &--achievement {
       .grid {
         &__inner {
@@ -1333,23 +1117,6 @@
         br {
           display: none;
         }
-      }
-    }
-  }
-  .overview {
-    &__inner {
-      &-content {
-        overflow-x: scroll;
-      }
-      &-row {
-        min-width: 500px;
-      }
-    }
-    &Content {
-      flex-direction: column;
-      align-items: flex-start;
-      &--caption {
-        justify-content: flex-start;
       }
     }
   }

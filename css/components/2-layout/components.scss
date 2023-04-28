@@ -213,7 +213,6 @@
     &.smIcon {
       width: 1em;
       height: 1em;
-      
     }
     svg {
       width: 1em;
@@ -550,6 +549,7 @@
   gap: 0.5em;
 
   &__label {
+    cursor: pointer;
     display: flex;
     position: relative;
     height: 1.2em;
@@ -572,6 +572,7 @@
     }
   }
   span {
+    cursor: pointer;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2;
